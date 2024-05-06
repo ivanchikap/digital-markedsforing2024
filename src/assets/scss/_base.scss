@@ -6,13 +6,12 @@ body {
   flex-direction: column;
   justify-content: space-between;
   min-height: 100vh;
-  font-family: $base-fonts;
-  color: $black;
+  font-family: $source-sans;
+  color: $dark-blue;
   font-weight: 400;
-  font-size: 1.4rem;
-  line-height: 1.2;
-
-  background-color:#efefef;
+  font-size: 1.8rem;
+  line-height: 1.6;
+  background-color:#fff;
 
 
   &.no-scroll {

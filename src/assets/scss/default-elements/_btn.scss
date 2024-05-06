@@ -1,143 +1,55 @@
 .btn {
-  font-family: $poppins;
-  font-weight: 500;
-  font-size: 20px;
-  display: inline-block;
-  padding: 10px 30px;
-  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 18px;
+  font-family: $source-sans;
+  line-height: 1.2;
+  font-weight: 600;
   text-align: center;
-  text-transform: capitalize;
-  transition: all .2s linear;
+  border-radius: 6px;
+  flex-shrink: 0;
   @extend .text-overflow;
 
-  @include mobile-large {
-    min-width: 230px;
+  &--small {
+    padding: 10px 25px;
   }
 
-  &--cta {
-    border: 2px solid $green;
-    color: $white;
-    background-color: $green;
-    box-shadow: none;
-
-    &:hover {
-      border-color: $blue;
-      background-color: $blue;
-
-      box-shadow: -4px 4px 6px rgba($black, .2);
-    }
-    &:focus {
-      box-shadow: -4px 4px 6px rgba($black, .2);
-    }
-  }
-
-  &--black {
-    color: $white;
-    border: 2px solid $black;
-    background-color: $black;
-
-    &:hover {
-      color: $white;
-      background-color: $blue;
-      box-shadow: -4px 4px 6px rgba($black, .2);
-      border-color: $blue;
-    }
-
-    &:focus {
-      box-shadow: -4px 4px 6px rgba($black, .2);
-    }
+  &--default {
+    padding: 15px 45px;
   }
 
   &--blue {
     background-color: $blue;
-    box-shadow: -4px 4px 6px rgba($black, .2);
-    border: 2px solid $blue;
+    box-shadow: 0 30px 60px 0 rgba($blue, 0.25);
+    color: $white;
+    transition: background-color .2s linear;
 
     &:hover {
-      box-shadow: none;
-      border: 2px solid $black;
-      background-color: #fff;
+      background-color: $hovered-blue;
     }
-  }
-
-  &--onblue {
-    color: $white;
-    background-color: transparent;
-    border: 2px solid $white;
 
     &:focus {
-      box-shadow: -4px 4px 6px rgba($black, .2);
+      background-color: $focused-blue;
+    }
+  }
+
+  &--light {
+    color: $blue;
+    background-color: rgba(#4A72FF0D, .05);
+    transition: background-color .2s linear;
+
+    &:focus {
+      background-color: rgba(#4A72FF0D, .07);
     }
 
     &:hover {
-      background-color: #fff;
-      color: $black;
-      box-shadow: -4px 4px 6px rgba($black, .2);
+      background-color: rgba(#4A72FF0D, .1);
     }
   }
 
-  &__wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px 30px;
-    margin: 30px 0 0 0;
-
-    @include tablet {
-    margin-top: 20px;
-  }
-
-    @include mobile {
-      flex-direction: column;
-    }
-
-    &--left {
-      justify-content: flex-start;
-
-      @include tablet {
-        justify-content: center;
-      }
-    }
-  }
-
-  &--small {
-    padding: 8px 20px;
-    font-size: 18px;
-  }
-
-  &::before {
-    font-family: "Font Awesome 5 Free";
-    color: inherit;
-    margin-right: 14px;
-  }
-
-  &--phone::before {
-    content: "\f879";
-    font-weight: 900;
-  }
-
-  &--email::before {
-    content: "\f0e0";
-    font-weight: 900;
-  }
-
-  &--cart::before {
-    content: "\f07a";
-    font-weight: 900;
-  }
-
-  &--plane::before {
-    content: "\f1d8";
-    font-weight: 400;
-  }
-
-  &--service::before {
-    content: "\f06e";
-    font-weight: 400;
-  }
-
-  &--shop::before {
-    content: "\f07a";
-    font-weight: 900;
+  &--email::after {
+    content: ">";
   }
 }
