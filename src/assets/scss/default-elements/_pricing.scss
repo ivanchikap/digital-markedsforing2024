@@ -1,0 +1,22 @@
+.pricing {
+  .col-3 {
+    display: flex;
+    flex-direction: column;
+
+    &:not(:nth-child(-n + 4)) {
+      margin-top: 30px;
+    }
+  }
+
+  .col-lg-6:not(:nth-child(-n + 2)) {
+    @include laptop {
+      margin-top: 30px;
+    }
+  }
+
+  .col-xs-12:not(:nth-child(-n + 1)) {
+    @include mobile {
+      margin-top: 20px;
+    }
+  }
+}

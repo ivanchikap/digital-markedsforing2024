@@ -1,0 +1,21 @@
+.to-top {
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  fill: $green;
+  position: fixed;
+  right: 20px;
+  bottom: 80px;
+  opacity: .6;
+  visibility: visible;
+  transition: opacity .2s linear;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &.hidden {
+    opacity: 0;
+    visibility: hidden;
+  }
+}

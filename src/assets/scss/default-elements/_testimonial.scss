@@ -1,0 +1,9 @@
+.testimonial {
+  &__slider-item {
+    padding: 3rem 14px 14px 14px;
+
+    @include mobile {
+      padding: 3rem 14px 14px 14px;
+    }
+  }
+}

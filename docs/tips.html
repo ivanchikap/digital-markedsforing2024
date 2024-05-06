@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+    <meta charset="UTF-8">
+    
+    
+    <!-- Useful meta tags -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="robots" content="index, follow">
+    <meta name="google" content="notranslate">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&display=swap"
+          rel="stylesheet">
+    
+    <link href="assets/plugins/video-js.css" rel="stylesheet">
+    <link href="assets/plugins/forest-video.css" rel="stylesheet">
+    <link href="assets/plugins/twentytwenty.css" rel="stylesheet">
+    <link href="assets/plugins/swiper.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/plugins/lightgallery.css">
+    <link rel="stylesheet" href="assets/plugins/lg-thumbnail.css">
+    
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    
+    <title>Projects</title>
+</head>
+<body class="">
+<!-- Header -->
+<header class="header">
+    <div class="header__top header__top--fixed">
+        <div class="container">
+            <button class="burger" id="burger">
+                <span>open navigation</span>
+            </button>
+            <a href="./index.html" class="logo">
+                <img src="assets/images/color-logo.svg" alt="logo">
+                <img src="assets/images/logo-mobile.svg" alt="logo-mobile">
+            </a>
+            <!-- /logo-->
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="./about.html">About Us</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="./services.html">Services</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="./nettsidepakker.html">nettsiderpakker</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="./projects.html">Projects</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="./tips.html">Tips</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- /nav-->
+            <div class="header__shopping" id="shopping-cart" data-modal="#modalShopping">
+                <i class="fas fa-shopping-cart"></i>
+            </div>
+        </div>
+    </div>
+    <!--/header__top-->
+    
+    
+    
+    
+    
+    
+    
+</header>
+
+<aside class="sidebar" id="sidebar">
+    <nav class="nav nav--sidebar">
+        <a class="nav__item" href="./about.html">
+            <span>About Us</span>
+        </a>
+        <a class="nav__item" href="./services.html">
+            <span>Services</span>
+        </a>
+        <a class="nav__item" href="./nettsidepakker.html">
+            <span>Nettsiderpakker</span>
+        </a>
+        <a class="nav__item" href="./projects.html">
+            <span>Projects</span>
+        </a>
+        <a class="nav__item" href="./tips.html">
+            <span>Tips</span>
+        </a>
+    </nav>
+</aside><div class="modal" id="modalShopping">
+    <div class="modal__dialog modal__dialog--sm">
+
+        <button type="button" class="modal__close">
+            <i class="fas fa-times-circle"></i>
+        </button>
+        <!--/modal__close-->
+
+        <div class="shop">
+            <div class="shop__left">
+                <h3 class="modal__title modal__title--contact">Shop website</h3>
+                <h5 class="modal__subtitle">CALL ME OR SEND ME A REQUEST</h5>
+
+                <ul class="shop__info">
+                    <li class="shop__info-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <a class="shop__info-link" href="tel:2001003000">(200) 100 3000</a>
+                    </li>
+                    <li class="shop__info-item">
+                        <i class="fas fa-envelope contact__info-icon"></i>
+                        <a class="shop__info-link"  href="mailto:designer@ui43.com">designer@ui43.com</a>
+                    </li>
+                </ul>
+                <!--/shop__info-->
+
+                <form class="form" action="/" method="post">
+                    <div class="form__control">
+                        <label class="form__label" for="full-name">Full name</label>
+                        <input type="text" class="form__element" id="full-name" placeholder="John Smith">
+                    </div>
+                    <div class="form__control">
+                        <label class="form__label" for="formInput">Email address</label>
+                        <input type="text" class="form__element" id="formInput" placeholder="Address e-mail">
+                    </div>
+                    <div class="form__control">
+                        <label class="form__label" for="temp-name">Template name</label>
+                        <input type="text" class="form__element" id="temp-name" placeholder="Some template">
+                    </div>
+                    <div class="form__control">
+                        <label class="form__label" for="formTextarea">Request</label>
+                        <textarea class="form__element form__element--textarea" name="formTextarea" id="formTextarea" placeholder="Type your request..."></textarea>
+                    </div>
+                    <div class="form__control form__control--checkbox">
+                        <label class="form__label" for="own-design">Own Design</label>
+                        <input type="checkbox" class="form__element--checkbox" name="own-design" id="own-design">
+                    </div>
+                    <div class="form__btn">
+                        <button class="btn btn--black btn--small btn--plane" type="submit">Send</button>
+                    </div>
+                </form>
+            </div>
+            <!--/shop__left-->
+            <div class="shop__right">
+                <img src="assets/images/contact.jpg" alt="contact image">
+            </div>
+            <!--/shop__right-->
+        </div>
+        <!--/shop-->
+    </div>
+    <!--/modal__dialog-->
+</div>
+<div class="modal" id="modalService">
+    <div class="modal__dialog modal__dialog--sm">
+
+        <button type="button" class="modal__close">
+            <i class="fas fa-times-circle"></i>
+        </button>
+        <!--/modal__close-->
+
+        <div class="shop">
+            <div class="shop__left">
+                <h3 class="modal__title modal__title--contact">Some service</h3>
+                <h5 class="modal__subtitle">description of the service!</h5>
+
+                <ul class="shop__info">
+                    <li class="shop__info-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <a class="shop__info-link" href="tel:2001003000">(200) 100 3000</a>
+                    </li>
+                    <li class="shop__info-item">
+                        <i class="fas fa-envelope contact__info-icon"></i>
+                        <a class="shop__info-link"  href="mailto:designer@ui43.com">designer@ui43.com</a>
+                    </li>
+                </ul>
+                <!--/shop__info-->
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi cupiditate debitis ea eligendi expedita facere illo incidunt laboriosam odio odit, pariatur provident quaerat quibusdam repudiandae suscipit totam ullam ut voluptate.</p>
+            </div>
+            <!--/shop__left-->
+            <div class="shop__right">
+                <img src="assets/images/contact.jpg" alt="contact image">
+            </div>
+            <!--/shop__right-->
+        </div>
+        <!--/shop-->
+    </div>
+    <!--/modal__dialog-->
+</div><div class="modal modal--project" id="modalProject">
+    <div class="modal__dialog modal__dialog--sm">
+
+        <button type="button" class="modal__close">
+            <i class="fas fa-times-circle"></i>
+        </button>
+        <!--/modal__close-->
+
+        <div class="modal__body">
+            <div class="modal__left">
+                <h3 class="modal__title">project 1</h3>
+                <h5 class="modal__subtitle">project 1 subtitle</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi cupiditate debitis ea eligendi expedita facere illo incidunt laboriosam odio odit, pariatur provident quaerat quibusdam repudiandae suscipit totam ullam ut voluptate.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi cupiditate debitis ea eligendi expedita facere illo incidunt laboriosam odio odit, pariatur provident quaerat quibusdam repudiandae suscipit totam ullam ut voluptate.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi cupiditate debitis ea eligendi expedita facere illo incidunt laboriosam odio odit, pariatur provident quaerat quibusdam repudiandae suscipit totam ullam ut voluptate.</p>
+            </div>
+            <!--/shop__left-->
+            <div class="modal__right">
+                <img src="assets/images/site1.jpg" alt="contact image">
+            </div>
+            <!--/shop__right-->
+        </div>
+        <!--/shop-->
+    </div>
+    <!--/modal__dialog-->
+</div>
+<!-- Main -->
+<main class="main">
+    <section class="banner banner--alt" style="background-image:  url('assets/images/team.jpg')">
+        <div class="container">
+            <div class="banner__info">
+                <h1>Our tips</h1>
+                <div class="banner__info-text">
+                    <h3>Blog news</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aperiam consequatur cum debitis eum
+                        expedita natus nisi soluta veritatis voluptatibus. </p>
+                </div>
+            </div>
+            <!-- /banner__info-->
+    
+        </div>
+    </section>
+    <!--/banner-->
+    
+    <section class="section tips">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 col-lg-6 col-sm-12">
+                    <article class="article">
+                        <a href="./news-item.html" class="article__img">
+                            <img src="assets/images/news1.jpg" alt="news photo">
+                        </a>
+                        <div class="article__about">
+                            <div class="article__author">
+                                <div class="article__avatar">
+                                    <img src="assets/images/man1.jpg" alt="avatar">
+                                </div>
+                                <h4 class="article__author-name">
+                                    Robert Fredriksen
+                                </h4>
+                            </div>
+                            <!-- /article__author-->
+                            <time class="article__date" datetime="2024-05-30">30.05.2024</time>
+                        </div>
+                        <div class="article__main">
+                            <h2 class="article__title">
+                                <a href="./news-item.html">The title of some news item</a>
+                            </h2>
+                            <p class="article__description">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. A atque, beatae culpa debitis
+                                delectus deserunt eaque eius est fugiat hic inventore ipsum mollitia omnis possimus
+                                repudiandae saepe, sed, soluta temporibus!
+                            </p>
+                            <a href="./news-item.html" class="article__link">View More</a>
+                        </div>
+    
+                    </article>
+                </div>
+                <!-- /col-4-->
+                <div class="col-4 col-lg-6 col-sm-12">
+                    <article class="article">
+                        <a href="./news-item.html" class="article__img">
+                            <img src="assets/images/news2.jpg" alt="news photo">
+                        </a>
+                        <div class="article__about">
+                            <div class="article__author">
+                                <div class="article__avatar">
+                                    <img src="assets/images/man1.jpg" alt="avatar">
+                                </div>
+                                <h4 class="article__author-name">
+                                    Robert Fredriksen
+                                </h4>
+                            </div>
+                            <!-- /article__author-->
+                            <time class="article__date" datetime="2024-05-30">30.05.2024</time>
+                        </div>
+                        <div class="article__main">
+                            <h2 class="article__title">
+                                <a href="./news-item.html">The title of some news item</a>
+                            </h2>
+                            <p class="article__description">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. A atque, beatae culpa debitis
+                                delectus deserunt eaque eius est fugiat hic inventore ipsum mollitia omnis possimus
+                                repudiandae saepe, sed, soluta temporibus!
+                            </p>
+                            <a href="./news-item.html" class="article__link">View More</a>
+                        </div>
+    
+                    </article>
+                </div>
+                <!-- /col-4-->
+                <div class="col-4 col-lg-6 col-sm-12">
+                    <article class="article">
+                        <a href="#" class="article__img">
+                            <img src="assets/images/before.jpg" alt="news photo">
+                        </a>
+                        <div class="article__about">
+                            <div class="article__author">
+                                <div class="article__avatar">
+                                    <img src="assets/images/man1.jpg" alt="avatar">
+                                </div>
+                                <h4 class="article__author-name">
+                                    Robert Fredriksen
+                                </h4>
+                            </div>
+                            <!-- /article__author-->
+                            <time class="article__date" datetime="2024-05-30">30.05.2024</time>
+                        </div>
+                        <div class="article__main">
+                            <h2 class="article__title">
+                                <a href="#">The title of some news item</a>
+                            </h2>
+                            <p class="article__description">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. A atque, beatae culpa debitis
+                                delectus deserunt eaque eius est fugiat hic inventore ipsum mollitia omnis possimus
+                                repudiandae saepe, sed, soluta temporibus!
+                            </p>
+                            <a href="#" class="article__link">View More</a>
+                        </div>
+    
+                    </article>
+                </div>
+                <!-- /col-4-->
+                <div class="col-4 col-lg-6 col-sm-12">
+                    <article class="article">
+                        <a href="#" class="article__img">
+                            <img src="assets/images/after.jpg" alt="news photo">
+                        </a>
+                        <div class="article__about">
+                            <div class="article__author">
+                                <div class="article__avatar">
+                                    <img src="assets/images/man1.jpg" alt="avatar">
+                                </div>
+                                <h4 class="article__author-name">
+                                    Robert Fredriksen
+                                </h4>
+                            </div>
+                            <!-- /article__author-->
+                            <time class="article__date" datetime="2024-05-30">30.05.2024</time>
+                        </div>
+                        <div class="article__main">
+                            <h2 class="article__title">
+                                <a href="#">The title of some news item</a>
+                            </h2>
+                            <p class="article__description">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. A atque, beatae culpa debitis
+                                delectus deserunt eaque eius est fugiat hic inventore ipsum mollitia omnis possimus
+                                repudiandae saepe, sed, soluta temporibus!
+                            </p>
+                            <a href="#" class="article__link">View More</a>
+                        </div>
+    
+                    </article>
+                </div>
+                <!-- /col-4-->
+                <div class="col-4 col-lg-6 col-sm-12">
+                    <article class="article">
+                        <a href="#" class="article__img">
+                            <img src="assets/images/site1.jpg" alt="news photo">
+                        </a>
+                        <div class="article__about">
+                            <div class="article__author">
+                                <div class="article__avatar">
+                                    <img src="assets/images/man1.jpg" alt="avatar">
+                                </div>
+                                <h4 class="article__author-name">
+                                    Robert Fredriksen
+                                </h4>
+                            </div>
+                            <!-- /article__author-->
+                            <time class="article__date" datetime="2024-05-30">30.05.2024</time>
+                        </div>
+                        <div class="article__main">
+                            <h2 class="article__title">
+                                <a href="#">The title of some news item</a>
+                            </h2>
+                            <p class="article__description">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. A atque, beatae culpa debitis
+                                delectus deserunt eaque eius est fugiat hic inventore ipsum mollitia omnis possimus
+                                repudiandae saepe, sed, soluta temporibus!
+                            </p>
+                            <a href="#" class="article__link">View More</a>
+                        </div>
+    
+                    </article>
+                </div>
+                <!-- /col-4-->
+                <div class="col-4 col-lg-6 col-sm-12">
+                    <article class="article">
+                        <a href="#" class="article__img">
+                            <img src="assets/images/site2.jpg" alt="news photo">
+                        </a>
+                        <div class="article__about">
+                            <div class="article__author">
+                                <div class="article__avatar">
+                                    <img src="assets/images/man1.jpg" alt="avatar">
+                                </div>
+                                <h4 class="article__author-name">
+                                    Robert Fredriksen
+                                </h4>
+                            </div>
+                            <!-- /article__author-->
+                            <time class="article__date" datetime="2024-05-30">30.05.2024</time>
+                        </div>
+                        <div class="article__main">
+                            <h2 class="article__title">
+                                <a href="#">The title of some news item</a>
+                            </h2>
+                            <p class="article__description">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. A atque, beatae culpa debitis
+                                delectus deserunt eaque eius est fugiat hic inventore ipsum mollitia omnis possimus
+                                repudiandae saepe, sed, soluta temporibus!
+                            </p>
+                            <a href="#" class="article__link">View More</a>
+                        </div>
+    
+                    </article>
+                </div>
+                <!-- /col-4-->
+            </div>
+           <div class="btn__wrapper">
+               <button class="btn btn--black">Load More</button>
+           </div>
+        </div>
+    </section>
+    <!--/services-->
+    
+</main>
+
+<!-- Footer -->
+<section id="talk" class="section section--nopading talk">
+    <div class="container">
+        <div class="row no-gutters">
+            <div class="col-5 col-md-12">
+                <div class="section__header">
+                    <h2>Want to talk to us more?</h2>
+                    <h4 class="section__subtitle">
+                        <span class="color-blue">Write to us</span> we call you.
+                        <span>Lorem ipsum dolor sit amet, consectetur.</span>
+                    </h4>
+                </div>
+            </div>
+            <!--/col-6-->
+            <div class="col-7 col-md-12">
+                <form class="c-form">
+                    <h4 class="c-form__title">Bli Kontaktet</h4>
+                    <div class="c-form__group">
+                        <label class="c-form__label">
+                            <input name="fullname" class="c-form__input" type="text" placeholder="Foretakstnavn">
+                            <svg class="c-form__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <path d="M128 148v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12zm140 12h40c6.6 0 12-5.4 12-12v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12zm-128 96h40c6.6 0 12-5.4 12-12v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12zm128 0h40c6.6 0 12-5.4 12-12v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12zm-76 84v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm76 12h40c6.6 0 12-5.4 12-12v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12zm180 124v36H0v-36c0-6.6 5.4-12 12-12h19.5V24c0-13.3 10.7-24 24-24h337c13.3 0 24 10.7 24 24v440H436c6.6 0 12 5.4 12 12zM79.5 463H192v-67c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v67h112.5V49L80 48l-.5 415z"/>
+                            </svg>
+                            <span class="c-form__label-text">Foretakstnavn</span>
+                        </label>
+                        <label class="c-form__label">
+                            <input name="ditt" class="c-form__input" type="text" placeholder="Ditt Navn">
+                            <svg class="c-form__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <path d="M313.6 304c-28.7 0-42.5 16-89.6 16-47.1 0-60.8-16-89.6-16C60.2 304 0 364.2 0 438.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-25.6c0-74.2-60.2-134.4-134.4-134.4zM400 464H48v-25.6c0-47.6 38.8-86.4 86.4-86.4 14.6 0 38.3 16 89.6 16 51.7 0 74.9-16 89.6-16 47.6 0 86.4 38.8 86.4 86.4V464zM224 288c79.5 0 144-64.5 144-144S303.5 0 224 0 80 64.5 80 144s64.5 144 144 144zm0-240c52.9 0 96 43.1 96 96s-43.1 96-96 96-96-43.1-96-96 43.1-96 96-96z"/>
+                            </svg>
+                            <span class="c-form__label-text">Ditt Navn</span>
+                        </label>
+                    </div>
+                    <div class="c-form__group">
+                        <label class="c-form__label">
+                            <input class="c-form__input" name="subject" type="tel" placeholder="096 333 33 33">
+                            <svg class="c-form__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M497.4 361.8l-112-48a24 24 0 0 0 -28 6.9l-49.6 60.6A370.7 370.7 0 0 1 130.6 204.1l60.6-49.6a23.9 23.9 0 0 0 6.9-28l-48-112A24.2 24.2 0 0 0 122.6 .6l-104 24A24 24 0 0 0 0 48c0 256.5 207.9 464 464 464a24 24 0 0 0 23.4-18.6l24-104a24.3 24.3 0 0 0 -14-27.6z"/>
+                            </svg>
+                            <span class="c-form__label-text">Telefon</span>
+                        </label>
+                        <label class="c-form__label">
+                            <input class="c-form__input" placeholder="some@emial.com" name="email">
+                            <svg class="c-form__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M464 64H48C21.5 64 0 85.5 0 112v288c0 26.5 21.5 48 48 48h416c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zm0 48v40.8c-22.4 18.3-58.2 46.7-134.6 106.5-16.8 13.2-50.2 45.1-73.4 44.7-23.2 .4-56.6-31.5-73.4-44.7C106.2 199.5 70.4 171.1 48 152.8V112h416zM48 400V214.4c22.9 18.3 55.4 43.9 104.9 82.6 21.9 17.2 60.1 55.2 103.1 55 42.7 .2 80.5-37.2 103.1-54.9 49.5-38.8 82-64.4 104.9-82.7V400H48z"/>
+                            </svg>
+                            <span class="c-form__label-text">E-POST</span>
+                        </label>
+                    </div>
+                    <button class="btn btn--cta btn--small btn--plane" type="submit">Bli Kontaktet</button>
+                </form>
+            </div>
+            <!--/col-6-->
+        </div>
+    </div>
+</section>
+<!--/talk-->
+<footer class="footer">
+    <div class="footer__main">
+        <div class="container">
+            <div class="footer__row">
+                <div class="footer__col-4">
+                    <h4 class="footer__title">Other Links</h4>
+                    <ul class="footer__default-list">
+                        <li class="footer__default-item">
+                            <a class="footer__default-contact link-decor-on-hover" href="#">Contact Info</a>
+                        </li>
+                        <li class="footer__default-item">
+                            <a class="footer__default-contact link-decor-on-hover" href="#">Sitemap</a>
+                        </li>
+                        <li class="footer__default-item">
+                            <a class="footer__default-contact link-decor-on-hover" href="#">Projects</a>
+                        </li>
+                        <li class="footer__default-item">
+                            <a class="footer__default-contact link-decor-on-hover" href="#">Reviews</a>
+                        </li>
+                        <li class="footer__default-item">
+                            <a class="footer__default-contact link-decor-on-hover" href="./about.html">Team</a>
+                        </li>
+                        <li class="footer__default-item">
+                            <a class="footer__default-contact link-decor-on-hover" href="#">Our Mission</a>
+                        </li>
+                        <li class="footer__default-item">
+                            <a class="footer__default-contact link-decor-on-hover" href="#">Contact Form</a>
+                        </li>
+                        <li class="footer__default-item">
+                            <a class="footer__default-contact link-decor-on-hover" href="#">Prices</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- / footer__col-4 -->
+                <div class="footer__col-4">
+                    <h4 class="footer__title">Services</h4>
+                    <ul class="footer__default-list">
+                        <li class="footer__default-item">
+                            <a class="footer__default-contact link-decor-on-hover" data-modal="#modalService" href="#">SEO</a>
+                        </li>
+                        <li class="footer__default-item">
+                            <a class="footer__default-contact link-decor-on-hover" data-modal="#modalService" href="#">SEM</a>
+                        </li>
+                        <li class="footer__default-item">
+                            <a class="footer__default-contact link-decor-on-hover" data-modal="#modalService" href="#">Ecommerce</a>
+                        </li>
+                        <li class="footer__default-item">
+                            <a class="footer__default-contact link-decor-on-hover" data-modal="#modalService" href="#">Google
+                                Adwords</a>
+                        </li>
+                        <li class="footer__default-item">
+                            <a class="footer__default-contact link-decor-on-hover" data-modal="#modalService" href="#">Banner
+                                Ads</a>
+                        </li>
+                        <li class="footer__default-item">
+                            <a class="footer__default-contact link-decor-on-hover" data-modal="#modalService" href="#">Online
+                                Ads</a>
+                        </li>
+                        <li class="footer__default-item">
+                            <a class="footer__default-contact link-decor-on-hover" data-modal="#modalService" href="#">SOME
+                                Ads</a>
+                        </li>
+                        <li class="footer__default-item">
+                            <a class="footer__default-contact link-decor-on-hover" data-modal="#modalService" href="#">
+                                Content Production</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- / footer__col-4 -->
+                <div class="footer__col-4">
+                    <h4 class="footer__title footer__title--join">Contacts</h4>
+                    <ul class="footer__contacts-list">
+                        <li class="footer__contacts-item footer__contacts-item--address">
+                            <a class="footer__contact link-decor-on-hover" href="#">Fiktivt Tømrerselskap AS,
+                                Storebruvegen 46, 2938 Bagn</a>
+                        </li>
+                        <li class="footer__contacts-item footer__contacts-item--tel">
+                            <a class="footer__contact link-decor-on-hover" href="tel:+99921722">999 21 722</a>
+                        </li>
+                        <li class="footer__contacts-item  footer__contacts-item--mail">
+                            <a class="footer__contact link-decor-on-hover"
+                               href="mailto:some@email.com">some@email.com</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- / footer__col-4 -->
+                <div class="footer__col-4">
+                    <h4 class="footer__title">Follow Us</h4>
+                    <ul class="footer__socials-list">
+                        <li class="footer__social-item">
+                            <a target="_blank" class="footer__social-contact footer__social-contact--facebook" href="#">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li class="footer__social-item">
+                            <a target="_blank" class="footer__social-contact footer__social-contact--telegram" href="#">
+                                <i class="fab fa-instagram-square"></i>
+                            </a>
+                        </li>
+                        <li class="footer__social-item">
+                            <a target="_blank" class="footer__social-contact footer__social-contact--telegram" href="#">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="footer__shedule">
+                        <h4 class="footer__title footer__title--noafter">
+                            Work schedule
+                        </h4>
+                        <ul class="footer__contacts-list">
+                            <li class="footer__contacts-item footer__contacts-item--clock d-flex align-items-center">
+                                <span class="footer__contact">Mon-Fri: 09:00 - 18:00,<br> Sat-Sun. - day off</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- / footer__col-4 -->
+            </div>
+        </div>
+    </div>
+    <!-- /footer__main  -->
+
+    <div class="footer__copyright">
+        <div class="container">
+            <p>© 2024 Digital marketing company <a class="link-decor-on-hover" href="#">Nettsidepakker.</a></p>
+            <p>Some slogan can be here!</p>
+        </div>
+    </div>
+</footer>
+<!--/footer-->
+<!--<div class="to-top" id="to-top">-->
+<!--    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">&lt;!&ndash; Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) &ndash;&gt;<path d="M256 504c137 0 248-111 248-248S393 8 256 8 8 119 8 256s111 248 248 248zm0-448c110.5 0 200 89.5 200 200s-89.5 200-200 200S56 366.5 56 256 145.5 56 256 56zm20 328h-40c-6.6 0-12-5.4-12-12V256h-67c-10.7 0-16-12.9-8.5-20.5l99-99c4.7-4.7 12.3-4.7 17 0l99 99c7.6 7.6 2.2 20.5-8.5 20.5h-67v116c0 6.6-5.4 12-12 12z"></path></svg>-->
+<!--</div>-->
+<div class="page-mask" id="pageMask"></div>
+
+<script src="assets/plugins/video.min.js"></script>
+<script src="assets/plugins/jquery.min.js"></script>
+<script src="assets/plugins/jquery-ui.min.js"></script>
+<script src="assets/plugins/jquery.event.move.js"></script>
+<script src="assets/plugins/jquery.twentytwenty.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="assets/plugins/swiper-init.js"></script>
+<script src="assets/plugins/init.js"></script>
+<script src="assets/js/app.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+.logo {
+  flex-shrink: 0;
+  max-width: 280px;
+  padding: 10px 0;
+
+  @include mobile {
+    max-width: 60px;
+    padding: 0;
+  }
+
+  img {
+    display: block;
+    @extend .img-cover;
+
+    &:first-child {
+      @include mobile {
+        display: none;
+      }
+    }
+
+    &:last-child {
+      display: none;
+
+      @include mobile {
+        display: inline-block;
+      }
+    }
+  }
+}

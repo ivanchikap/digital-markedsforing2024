@@ -1,0 +1,29 @@
+.who {
+  background-color: $blue;
+  
+  @include tablet {
+    text-align: center;
+  }
+
+  h2 {
+    margin-bottom: 20px;
+  }
+
+  h2, p {
+    color: $white;
+  }
+
+  .row {
+    align-items: center;
+  }
+
+  .btn {
+    min-width: 200px;
+
+    @include tablet {
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 30px;
+    }
+  }
+}

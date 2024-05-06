@@ -1,0 +1,105 @@
+.nav {
+  $root: &;
+  color: $white;
+  font-family: $poppins;
+  max-width: calc(100% - 280px);
+  padding-left: 20px;
+
+  @include tablet {
+    display: none;
+    padding: 0;
+  }
+
+  &--sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    max-width: 100%;
+
+    .nav__item {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      color: #eee;
+
+      &:hover {
+        color: #fff;
+        background-color: rgba(255, 255, 255, .1);
+      }
+
+      @include tablet {
+        padding: 14px;
+      }
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 30px;
+
+    @include laptop {
+      gap: 4px 14px;
+    }
+  }
+
+  &__item {
+    cursor: pointer;
+    position: relative;
+    font-size: 21px;
+    text-shadow: -1px 1px 2px rgba($black, .7);
+    font-weight: 400;
+    padding: 8px;
+    transition: color .2s linear;
+    text-transform: capitalize;
+    @extend .text-overflow;
+
+    @include laptop {
+      padding: 4px;
+    }
+
+    &--dropdown {
+      &::after {
+        content: "\f107";
+        font-family: "Font Awesome 5 Free";
+        font-size: 20px;
+        font-weight: 900;
+      }
+
+      &:hover {
+        #{$root} {
+          &__dropdown {
+            visibility: visible;
+            height: 100%;
+          }
+        }
+      }
+    }
+
+    &:hover {
+      color: $black;
+    }
+  }
+
+  &__dropdown {
+    visibility: hidden;
+    height: 1px;
+    padding: 0 10px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    font-size: 18px;
+    color: $black;
+    background-color: transparent;
+    transition: all .2s linear;
+    overflow: hidden;
+  }
+
+  &__dropdown-item {
+    @extend .text-overflow;
+
+    &:hover {
+      color: $green;
+    }
+  }
+}

@@ -1,0 +1,112 @@
+.article {
+  $root: &;
+  background-color: #fff;
+  max-width: 45rem;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: -4px 4px 8px -2px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all .2s linear;
+
+  &:hover, &:focus {
+    box-shadow: -12px 12px 20px -6px rgba(0, 0, 0, .4);
+  }
+
+  &__img {
+    display: block;
+    height: 30rem;
+    width: 100%;
+    overflow: hidden;
+
+    img {
+      @extend .img-cover;
+      filter: grayscale(60%);
+      transition: all .2s linear;
+
+      &:hover {
+        transform: scale(1.03);
+        filter: grayscale(0);
+      }
+    }   
+  }
+
+  &__about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: lighten($black, .2);
+    padding: 1rem;
+    border-bottom: 1px dashed $blue;
+  }
+
+  &__author {
+    display: flex;
+    align-items: center;
+    max-width: 70%;
+    padding-right: .6rem;
+    overflow: hidden;
+  }
+
+  &__author-name {
+    font-size: 18px;
+    max-height: 6rem;
+    overflow: hidden;
+  }
+
+  &__avatar {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: .8rem;
+    flex-shrink: 0;
+
+    img {
+      @extend .img-cover;
+    }
+  }
+
+  &__date {
+    max-width: 30%;
+    @extend .text-overflow;
+  }
+
+  &__main {
+    padding: 1rem;
+  }
+
+  &__title {
+    font-size: 2.6rem;
+    margin-bottom: 1rem;
+    overflow: hidden;
+    text-align: center;
+
+    a {
+      font-family: $poppins;
+      font-size: 2.6rem;
+      text-transform: uppercase;
+      transition: all .2s linear;
+      &:hover {
+        text-decoration: underline;
+        color: $blue;
+      }
+    }
+  }
+
+  &__description {
+    overflow: hidden;
+  }
+
+  &__link {
+    color: $blue;
+    margin-top: 1rem;
+    padding: 0.4rem 0;
+    font-size: 18px;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

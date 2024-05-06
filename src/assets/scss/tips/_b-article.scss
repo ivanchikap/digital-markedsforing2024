@@ -1,0 +1,277 @@
+.b-article {
+  margin-top: 3rem;
+
+  .article__about {
+    padding: 1rem 0;
+  }
+
+  &__title {
+    font-family: $poppins;
+    font-weight: 700;
+    font-size: 3.3rem;
+    line-height: 1.2;
+    color: lighten($black, .2);
+    text-align: center;
+
+    @include mobile-large {
+      font-size: 2.8rem;
+    }
+
+    @include mobile {
+      text-align: left;
+      font-size: 2.2rem;
+    }
+  }
+
+  &__author {
+    display: flex;
+    font-size: 2.4rem;
+    align-items: center;
+    max-width: 70%;
+    padding-right: .8rem;
+    overflow: hidden;
+
+    @include mobile-large {
+      font-size: 2rem;
+    }
+
+    @include mobile {
+      font-size: 1.8rem;
+    }
+  }
+
+  &__author-name {
+    font-size: 2.4rem;
+    max-height: 6rem;
+    overflow: hidden;
+
+    @include mobile-large {
+      font-size: 2rem;
+    }
+    @include mobile {
+      font-size: 1.8rem;
+      max-height: 5.6rem;
+    }
+  }
+
+  &__avatar {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: .8rem;
+    flex-shrink: 0;
+
+    @include mobile {
+      width: 5rem;
+      height: 5rem;
+    }
+
+    img {
+      @extend .img-cover;
+    }
+  }
+
+  &__date {
+    max-width: 30%;
+    font-size: 2.4rem;
+    @extend .text-overflow;
+
+    @include mobile-large {
+      font-size: 2rem;
+    }
+    @include mobile {
+      font-size: 1.8rem;
+    }
+  }
+
+  &__body {
+    margin-top: 2rem;
+
+    &::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  }
+
+  &__photo {
+    float: right;
+    border: thin $blue dashed;
+    display: flex;
+    flex-flow: column;
+    padding: 5px;
+    width: 40%;
+    height: auto;
+    margin: 0 0 15px 15px;
+
+    @include tablet {
+      margin: 0 0 8px 8px;
+    }
+
+    @include mobile {
+      float: none;
+      width: 100%;
+      margin: 1rem 0 1rem 0;
+    }
+  }
+
+  img.b-article__photo-img {
+    margin-bottom: 0;
+    @extend .img-cover;
+  }
+
+  figcaption {
+    background-color: $blue;
+    color: #fff;
+    font: italic smaller sans-serif;
+    padding: 3px;
+    text-align: center;
+  }
+
+  &__body {
+    h1 {
+      font-size: 48px;
+
+      @include widescreen {
+        font-size: 46px;
+      }
+      @include laptop {
+        font-size: 44px;
+      }
+      @include tablet {
+        font-size: 42px;
+      }
+      @include mobile-large {
+        font-size: 40px;
+      }
+      @include mobile {
+        font-size: 36px;
+      }
+    }
+
+    h2 {
+      font-size: 44px;
+
+      @include widescreen {
+        font-size: 42px;
+      }
+      @include laptop {
+        font-size: 40px;
+      }
+      @include tablet {
+        font-size: 38px;
+      }
+      @include mobile-large {
+        font-size: 34px;
+      }
+      @include mobile {
+        font-size: 30px;
+      }
+    }
+
+    h3 {
+      font-size: 40px;
+
+      @include widescreen {
+        font-size: 38px;
+      }
+      @include laptop {
+        font-size: 36px;
+      }
+      @include tablet {
+        font-size: 34px;
+      }
+      @include mobile-large {
+        font-size: 32px;
+      }
+      @include mobile {
+        font-size: 28px;
+      }
+    }
+
+    h4 {
+      font-size: 36px;
+
+      @include widescreen {
+        font-size: 34px;
+      }
+      @include laptop {
+        font-size: 32px;
+      }
+      @include tablet {
+        font-size: 30px;
+      }
+      @include mobile-large {
+        font-size: 28px;
+      }
+      @include mobile {
+        font-size: 24px;
+      }
+    }
+
+    h5 {
+      font-size: 32px;
+
+      @include widescreen {
+        font-size: 30px;
+      }
+      @include laptop {
+        font-size: 28px;
+      }
+      @include tablet {
+        font-size: 26px;
+      }
+    }
+
+    h6 {
+      font-size: 28px;
+
+      @include widescreen {
+        font-size: 26px;
+      }
+      @include laptop {
+        font-size: 24px;
+      }
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.4;
+    }
+
+    h1, h2, h3, h4, h5, h6, p, ul, ol, dl, img {
+      margin-bottom: 20px;
+    }
+
+    a {
+      color: $blue;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    ul {
+      list-style: '- ';
+      font-size: 20px;
+      margin-left: 10px;
+
+      @include mobile {
+        font-size: 18px;
+      }
+    }
+
+    ol {
+      list-style: decimal inside;
+      font-size: 20px;
+
+      @include mobile {
+        font-size: 18px;
+      }
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+  }
+}

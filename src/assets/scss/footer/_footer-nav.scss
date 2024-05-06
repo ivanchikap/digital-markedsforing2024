@@ -1,0 +1,25 @@
+.footer-nav {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px 10px;
+  color: #fff;
+  padding: 30px 0;
+  text-align: center;
+
+  &__item {
+    padding: 8px 12px;
+    text-transform: capitalize;
+    @extend .text-overflow;
+
+    &::after {
+      content: '';
+      position: absolute;
+    }
+
+    &:hover {
+      color: $blue;
+    }
+  }
+}

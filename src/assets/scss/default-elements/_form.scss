@@ -1,0 +1,100 @@
+.form {
+
+  &__control {
+    & + & {
+      margin-top: 2rem;
+
+      @include tablet {
+        margin-top: 2rem;
+      }
+
+      @include mobile-large {
+        margin-top: 1.6rem;
+      }
+    }
+
+    &--checkbox {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+
+      .form__label {
+        user-select: none;
+        margin: 0;
+        padding-right: 6px;
+      }
+
+      @include mobile-large {
+        justify-content: flex-start;
+        margin-left: 26px;
+      }
+    }
+  }
+
+  &__label {
+    display: inline-block;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 0.8rem;
+    margin-left: 26px;
+  }
+
+  &__element {
+    display: block;
+    padding: 1.5rem 2.6rem;
+    width: 100%;
+    border-radius: 2.7rem;
+    border: 1px solid rgba(#707070, .3);
+    color: $black;
+    font-size: 1.2rem;
+    transition: border .1s linear;
+
+    @include mobile-large {
+      padding: 1.2rem 1.8rem;
+      border-radius: 2.2rem;
+    }
+
+    &:focus {
+      border-color: #eee;
+    }
+
+    &::placeholder {
+      font-weight: 300;
+    }
+
+    &--textarea {
+      min-height: 12rem;
+    }
+
+    &--checkbox {
+      width: 20px;
+      height: 20px;
+      border-radius: 4px;
+    }
+  }
+
+  &__btn {
+    margin-top: 3rem;
+    text-align: right;
+
+    @include tablet {
+      margin-top: 2.4rem;
+    }
+
+    @include mobile-large {
+      margin-top: 2rem;
+    }
+    
+    @include mobile {
+      text-align: left;
+    }
+  }
+
+  .btn {
+    min-width: 200px;
+
+    @include mobile-large {
+      width: 100%;
+    }
+  }
+}

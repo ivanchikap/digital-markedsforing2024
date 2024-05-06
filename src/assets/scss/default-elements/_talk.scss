@@ -1,0 +1,27 @@
+.talk {
+  background-color: #fff;
+  .col-5 {
+    display: flex;
+    align-items: center;
+  }
+  .section__header {
+    text-align: left;
+    padding: 30px 15px;
+    h2 {
+      margin-bottom: 10px;
+    }
+    
+    @include tablet {
+      text-align: center;
+      //margin-bottom: 0;
+    }
+  }
+  .section__subtitle {
+    margin-left: 0;
+    margin-right: auto;
+
+    @include tablet {
+      margin-left: auto;
+    }
+  }
+}

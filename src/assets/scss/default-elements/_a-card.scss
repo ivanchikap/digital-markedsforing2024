@@ -1,0 +1,38 @@
+.a-card {
+  $root: &;
+  text-align: center;
+  max-width: 400px;
+  cursor: pointer;
+
+  &:hover {
+    #{$root} {
+      &__title {
+        color: $blue;
+        text-decoration: underline;
+      }
+
+      &__icon {
+        fill: $blue;
+      }
+    }
+  }
+
+
+  &__icon {
+    height: 60px;
+    transition: fill .2s linear;
+  }
+
+  &__title {
+    font-family: $poppins;
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 2.4rem;
+    margin: 2rem 0 1rem;
+    transition: color .2s linear;
+  }
+
+  &__desc {
+    line-height: 1.4;
+  }
+}

@@ -1,0 +1,16 @@
+.tips-item {
+  padding: 40px 0;
+
+  .btn {
+    @include mobile-large {
+      min-width: 170px;
+    }
+  }
+
+
+  &__top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

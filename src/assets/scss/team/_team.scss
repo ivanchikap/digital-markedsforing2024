@@ -1,0 +1,24 @@
+.team {
+  .row {
+    justify-content: center;
+  }
+
+  .col-3:not(:nth-child(-n + 4)) {
+    margin-top: 30px;
+  }
+  .col-lg-4:not(:nth-child(-n + 3)) {
+      @include laptop {
+        margin-top: 30px;
+      }
+  }
+  .col-md-5:not(:nth-child(-n + 2)) {
+    @include tablet {
+      margin-top: 30px;
+    }
+  }
+  .col-sm-8:not(:nth-child(-n + 1)) {
+    @include mobile-large {
+      margin-top: 30px;
+    }
+  }
+}
