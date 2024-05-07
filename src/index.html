@@ -11,40 +11,60 @@ title: Main
 
 <section class="banner">
     <div class="container">
-        <div class="banner__info">
-            <h4 class="page-name">About us</h4>
-            <h1 class="page-title">Lorem ipsum dolor sit amet, consectetur </h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, </p>
-            <div class="banner__actions">
-                <button class="btn btn--default btn--blue btn--shop" type="button">Shop</button>
-                <button class="btn btn--default btn--light btn--email" type="button">Mail Us</button>
-            </div>
-
-            <div class="banner__siteinfo">
-                <div class="siteinfo">
-                    <span>icon</span>
-                    <div class="siteinfo__info">
-                        <p class="siteinfo__name">TOTAL DON’TLOUD</p>
-                        <p class="siteinfo__number">1,501,234</p>
-                    </div>
+        <div class="banner__container">
+            <div class="banner__info">
+                <h4 class="page-name">About us</h4>
+                <h1 class="page-title">Lorem ipsum dolor sit amet, consectetur </h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, </p>
+                <div class="banner__actions">
+                    <button class="btn btn--default btn--blue btn--shop" type="button">
+                        <span>Shop</span>
+                        <svg class="btn__icon">
+                            <use href="./assets/images/icons.svg#icon-arrow-right-circle"></use>
+                        </svg>
+                    </button>
+                    <button class="btn btn--default btn--light btn--email" type="button">
+                        <span>Mail Us</span>
+                        <svg class="btn__icon">
+                            <use href="./assets/images/icons.svg#icon-mail"></use>
+                        </svg>
+                    </button>
                 </div>
-                <!--/siteinfo-->
-                <div class="siteinfo">
-                    <span>icon</span>
-                    <div class="siteinfo__info">
-                        <p class="siteinfo__name">TOTAL USERS</p>
-                        <p class="siteinfo__number">1,318,829</p>
+                <div class="banner__siteinfo">
+                    <div class="siteinfo">
+                        <svg class="siteinfo__icon">
+                            <use href="./assets/images/icons.svg#icon-download"></use>
+                        </svg>
+                        <div class="siteinfo__info">
+                            <p class="siteinfo__name">TOTAL DON’TLOUD</p>
+                            <p class="siteinfo__number">1,501,234</p>
+                        </div>
                     </div>
+                    <!--/siteinfo-->
+                    <div class="siteinfo">
+                        <svg class="siteinfo__icon">
+                            <use href="./assets/images/icons.svg#icon-user"></use>
+                        </svg>
+                        <div class="siteinfo__info">
+                            <p class="siteinfo__name">TOTAL USERS</p>
+                            <p class="siteinfo__number">1,318,829</p>
+                        </div>
+                    </div>
+                    <!--/siteinfo-->
                 </div>
-                <!--/siteinfo-->
             </div>
+            <!--  /banner__info-->
+            <div class="banner__img-wrapper">
+                <img class="banner__img" src="./assets/images/banner-photo.jpg"
+                     srcset="./assets/images/banner-photo.jpg 1x, ./assets/images/banner-photo@2x.jpg 2x"
+                     alt="banner photo">
+            </div>
+            <!--/banner__img-wrapper-->
         </div>
-
-
     </div>
 </section>
 <!--/banner-->
-
 <section id="website" class="section website">
     <div class="container">
         <div class="row">

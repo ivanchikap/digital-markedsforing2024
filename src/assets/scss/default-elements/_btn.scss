@@ -1,4 +1,5 @@
 .btn {
+  $root: &;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -18,6 +19,29 @@
 
   &--default {
     padding: 15px 45px;
+  }
+
+  &__icon {
+    width: 16px;
+    height: 16px;
+    margin-left: 16px;
+  }
+
+  &--shop {
+    #{$root} {
+      &__icon {
+        fill: transparent;
+        stroke: #fff;
+      }
+    }
+  }
+
+  &--email {
+    #{$root} {
+      &__icon {
+        fill: $blue;
+      }
+    }
   }
 
   &--blue {
@@ -47,9 +71,5 @@
     &:hover {
       background-color: rgba(#4A72FF0D, .1);
     }
-  }
-
-  &--email::after {
-    content: ">";
   }
 }
