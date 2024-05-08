@@ -1,0 +1,51 @@
+.testimonial {
+  position: relative;
+
+  &__container {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 238px;
+    display: flex;
+    gap: 62px;
+  }
+
+  &__img {
+    border-radius: 20px;
+    flex-basis: 367px;
+    height: 400px;
+    overflow: hidden;
+
+    img {
+      @extend .img-cover;
+    }
+  }
+
+  &__swiper {
+    position: absolute;
+    z-index: 3;
+    left: 183px;
+    top: 219px;
+    width: 1140px;
+    height: 340px;
+  }
+
+  .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+    margin-top: 54px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .swiper-pagination-bullet {
+    width: 16px;
+    height: 16px;
+    background-color: lighten($blue, 20%);
+  }
+
+  .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background-color: rgba($blue, 50%);
+  }
+
+  .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 8px;
+  }
+}

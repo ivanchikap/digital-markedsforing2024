@@ -1,0 +1,16 @@
+.services {
+  background-color: $bg-white;
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px 20px;
+  }
+
+  &__btn {
+    margin-top: 48px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

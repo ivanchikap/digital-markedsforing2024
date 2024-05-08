@@ -1,16 +1,16 @@
 @import "utils/fonts";
-@import "vars";
-@import "mixins";
-@import "reset";
-@import "fontawesome";
-@import "grid";
-@import "base";
-@import "extends";
+@import "utils/vars";
+@import "utils/mixins";
+@import "utils/reset";
+@import "utils/grid";
+@import "utils/base";
+@import "utils/extends";
 
 
 @import "default-elements/all";
 
 @import "header/all";
+@import "main/all";
 @import "team/team";
 @import "nettsidepakker/all";
 @import "projects/all";

@@ -90,7 +90,6 @@
     right: 1.3rem;
     color: $black;
     background-color: transparent;
-    font-size: 3.6rem;
     z-index: 1;
     transition: color .2s linear, transform .2s linear;
 
@@ -108,6 +107,13 @@
     @include mobile {
       font-size: 2.6rem;
     }
+  }
+
+  &__close-svg {
+    width: 32px;
+    height: 32px;
+    fill: $dark-blue;
+    stroke: #fff;
   }
 
   &__content {

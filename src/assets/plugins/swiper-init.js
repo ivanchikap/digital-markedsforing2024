@@ -41,8 +41,9 @@ var swiper = new Swiper(".mySwiper", {
     }
 });
 
-var swiper1 = new Swiper(".testimonial__slider", {
-    direction: "horizontal",
+var swiper1 = new Swiper(".test-swiper", {
+    slidesPerView: 3,
+    spaceBetween: 25,
     coverflowEffect: {
         rotate: 50,
         stretch: 0,
@@ -50,10 +51,10 @@ var swiper1 = new Swiper(".testimonial__slider", {
         modifier: 1,
     },
     autoplay: {
-        delay: 4000
+        // delay: 4000
     },
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    }
+    pagination: {
+        el: ".test-pagination",
+        clickable: true,
+    },
 });

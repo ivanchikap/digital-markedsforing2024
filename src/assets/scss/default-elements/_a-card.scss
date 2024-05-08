@@ -1,38 +1,141 @@
 .a-card {
   $root: &;
-  text-align: center;
-  max-width: 400px;
   cursor: pointer;
+  position: relative;
+  padding-top: 32px;
+  flex-basis: calc(33.3333% - 40px);
+  max-width: calc(33.3333% - 40px);
+  flex-grow: 1;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 88%;
+    box-shadow: 0px 10px 40px 0 rgba($shadow-blue, 0.08);
+
+  }
 
   &:hover {
-    #{$root} {
-      &__title {
-        color: $blue;
-        text-decoration: underline;
-      }
-
-      &__icon {
-        fill: $blue;
-      }
+    &::before {
+      box-shadow: none;
+    }
+    .a-card__title {
+      text-decoration: underline;
+    }
+    .a-card__icon {
+      transform: translate(-50%, -6px);
     }
   }
 
-
   &__icon {
-    height: 60px;
-    transition: fill .2s linear;
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, 0);
+    width: 80px;
+    height: 80px;
+    background-color: #E2E1F7;
+    border-radius: 8px;
+    transition: transform .2s ease-in-out;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      background-image: url('../images/sprite-services.png');
+    }
+  }
+
+  &--seo {
+    .a-card__icon::before {
+      background-position: -78px 0px;
+      width: 38px;
+      height: 38px;
+    }
+  }
+
+  &--sem {
+    .a-card__icon::before {
+      background-position: -38px -40px;
+      width: 38px;
+      height: 38px;
+    }
+  }
+
+  &--ecommerce {
+    .a-card__icon::before {
+      background-position: -40px 0px;
+      width: 38px;
+      height: 38px;
+    }
+  }
+
+  &--google {
+    .a-card__icon::before {
+      background-position: 0px -40px;
+      width: 38px;
+      height: 38px;
+    }
+  }
+
+  &--banner-ads {
+    .a-card__icon::before {
+      background-position: -78px -38px;
+      width: 36px;
+      height: 36px;
+    }
+  }
+
+  &--online-ads {
+    .a-card__icon::before {
+      background-position: 0px 0px;
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  //will be new icon
+  &--some-ads {
+    .a-card__icon::before {
+      background-position: 0px 0px;
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  //will be new icon
+  &--content {
+    .a-card__icon::before {
+      background-position: 0px 0px;
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  &__inner {
+    background-color: #fff;
+    text-align: center;
+    padding: 66px 18px 22px 18px;
+    box-shadow: 0 10px 60px 0 rgba($shadow-blue, 8%);
+    border-radius: 20px;
   }
 
   &__title {
-    font-family: $poppins;
-    text-transform: capitalize;
-    font-weight: 500;
-    font-size: 2.4rem;
-    margin: 2rem 0 1rem;
-    transition: color .2s linear;
+    font-family: $DMSans;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 1.2;
+    text-transform: uppercase;
+    margin-bottom: 14px;
   }
 
-  &__desc {
-    line-height: 1.4;
+  &__text {
+    color: rgba($dark-blue, 60%);
   }
 }

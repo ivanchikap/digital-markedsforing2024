@@ -1,0 +1,107 @@
+.banner {
+  padding: 116px 0 60px 0;
+  background-image: url('../images/bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url('../images/bg@2x.jpg');
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 100px;
+  }
+
+  &__info {
+    flex-basis: 526px;
+  }
+
+
+  &__page-name {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: 0.1em;
+    color: $blue;
+    margin-bottom: 16px;
+  }
+
+  &__page-title {
+    font-family: $DMSans;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.5;
+    color: $dark-blue;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    color: rgba($dark-blue, 60%);
+    margin-bottom: 30px;
+  }
+
+  &__actions {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 70px;
+  }
+
+  &__siteinfo {
+    display: flex;
+    gap: 86px;
+  }
+
+  &__img-wrapper {
+    position: relative;
+    flex-grow: 1;
+    flex-basis: calc(100% - 626px);
+    background-image: url("../images/img-decor.png");
+    background-repeat: no-repeat;
+    background-size: 120px 120px;
+    background-position: 20px 10px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 2%;
+      bottom: 10%;
+      width: 138px;
+      height: 116px;
+      transform: rotate(-2deg);
+      background-image: url("../images/round.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      z-index: 3;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      right: 8%;
+      bottom: 15%;
+      width: 27px;
+      height: 85px;
+      background-image: url("../images/waves.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      z-index: 3;
+    }
+  }
+
+  &__img {
+    border-radius: 50%;
+    position: relative;
+    z-index: 2;
+    @extend .img-cover;
+  }
+
+}
