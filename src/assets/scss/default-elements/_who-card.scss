@@ -1,0 +1,81 @@
+.who-card {
+  background-color: #fff;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 30px;
+  max-width: 90%;
+  max-height: 90%;
+  box-shadow: 0 32px 54px 0 rgba(#0F0E23, 20%);
+  border-radius: 20px;
+
+
+  &__author {
+    display: flex;
+    gap: 14px;
+    margin-bottom: 24px;
+  }
+
+  &__avatar {
+    width: 80px;
+    height: 80px;
+    flex-shrink: 0;
+
+    img {
+      border-radius: 50%;
+      @extend .img-cover;
+    }
+  }
+
+  &__name {
+    font-size: 22px;
+    line-height: 1.2;
+    color: $black;
+  }
+
+  &__email {
+    color: rgba($black, 30%);
+    line-height: 1.2;
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+
+  &__position {
+    color: rgba($black, 50%);
+  }
+
+  &__info-top {
+    display: flex;
+    border: 1px solid grey;
+    border-radius: 8px 8px 0 0;
+  }
+
+  &__info-top-item {
+    padding: 14px 20px;
+    flex-grow: 1;
+    flex-basis: 50%;
+    &:last-child {
+      border-left: 1px solid grey;
+    }
+  }
+
+  &__info-bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 0 0 8px 8px;
+    border-left: 1px solid grey;
+    border-right: 1px solid grey;
+    border-bottom: 1px solid grey;
+  }
+
+  &__info-bottom-text {
+    padding: 14px 18px;
+  }
+
+  &__graph {
+    border-radius: 0 0 8px 8px;
+    max-height: 50px;
+  }
+}
