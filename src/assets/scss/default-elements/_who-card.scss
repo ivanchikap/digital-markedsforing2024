@@ -10,7 +10,6 @@
   box-shadow: 0 32px 54px 0 rgba(#0F0E23, 20%);
   border-radius: 20px;
 
-
   &__author {
     display: flex;
     gap: 14px;
@@ -45,10 +44,15 @@
     color: rgba($black, 50%);
   }
 
+
+  &__info {
+    border: 1px solid grey;
+    border-radius: 8px;
+  }
+
   &__info-top {
     display: flex;
-    border: 1px solid grey;
-    border-radius: 8px 8px 0 0;
+    border-bottom: 1px solid grey;
   }
 
   &__info-top-item {
@@ -64,10 +68,6 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    border-radius: 0 0 8px 8px;
-    border-left: 1px solid grey;
-    border-right: 1px solid grey;
-    border-bottom: 1px solid grey;
   }
 
   &__info-bottom-text {
@@ -75,7 +75,7 @@
   }
 
   &__graph {
-    border-radius: 0 0 8px 8px;
     max-height: 50px;
+    border-radius: 0 0 8px 8px;
   }
 }
