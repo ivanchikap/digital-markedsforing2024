@@ -401,12 +401,12 @@ title: Main
                     <div class="who-card__info">
                         <div class="who-card__info-top">
                             <div class="who-card__info-top-item">
-                                <p>Invites</p>
-                                <p>03</p>
+                                <p class="who-card__info-name">Invites</p>
+                                <p class="who-card__invites-number">03</p>
                             </div>
                             <div class="who-card__info-top-item">
-                                <p>Pending</p>
-                                <p>03</p>
+                                <p class="who-card__info-name">Pending</p>
+                                <p class="who-card__pending-number">&#8226 02</p>
                             </div>
                         </div>
                         <div class="who-card__info-bottom">
@@ -439,100 +439,115 @@ title: Main
     <div class="container">
         <header class="section__header">
             <h2 class="section__title">Our pricing</h2>
-            <h4 class="section__subtitle"><span class="color-blue">Personal approach</span> to each client.</h4>
+            <h4 class="section__subtitle">Personal approach to each client.</h4>
         </header>
-        <div class="section__main">
-            <div class="row">
-                <div class="col-3 col-lg-6 col-xs-12">
-                    <article class="t-card">
-                        <div class="t-card__header">
-                            <h5 class="t-card__title">Landing page</h5>
-                        </div>
-                        <div class="t-card__price">
-                            <p class="t-card__currency">€</p>
-                            <p class="t-card__value">400</p>
-                        </div>
-                        <div class="t-card__body">
-                            <ul class="t-card__list">
-                                <li class="t-card__list-item">Effective short text</li>
-                                <li class="t-card__list-item">Modern adaptive design</li>
-                                <li class="t-card__list-item">Easy to use</li>
-                                <li class="t-card__list-item">Functional extension</li>
-                                <li class="t-card__list-item">Call to action that works</li>
-                            </ul>
-                            <button data-modal="#modalShopping" class="btn btn--cart btn--cta btn--small">Book</button>
-                        </div>
-                    </article>
+        <!--/section__header-->
+        <div class="pricing__main">
+            <article class="p-card">
+                <div>
+                    <div class="p-card__header">
+                        <h5 class="p-card__title">Landing page</h5>
+                    </div>
+                    <p class="p-card__price">
+                        € 400
+                    </p>
+
+                    <ul class="p-card__list">
+                        <li class="p-card__list-item">Effective short text</li>
+                        <li class="p-card__list-item">Modern adaptive design</li>
+                        <li class="p-card__list-item">Easy to use</li>
+                        <li class="p-card__list-item">Functional extension</li>
+                        <li class="p-card__list-item">Call to action that works</li>
+                    </ul>
                 </div>
-                <!-- /col-3-->
-                <div class="col-3 col-lg-6 col-xs-12">
-                    <article class="t-card">
-                        <div class="t-card__header">
-                            <h5 class="t-card__title">Promo site</h5>
-                        </div>
-                        <div class="t-card__price">
-                            <p class="t-card__currency">€</p>
-                            <p class="t-card__value">800</p>
-                        </div>
-                        <div class="t-card__body">
-                            <ul class="t-card__list">
-                                <li class="t-card__list-item">Description of activity</li>
-                                <li class="t-card__list-item">General information about products or services</li>
-                                <li class="t-card__list-item">News or blog</li>
-                                <li class="t-card__list-item">Photo gallery or price list</li>
-                                <li class="t-card__list-item">Contact us</li>
-                            </ul>
-                            <button data-modal="#modalShopping" class="btn btn--cart btn--cta btn--small">Book</button>
-                        </div>
-                    </article>
+                <button class="btn btn--default btn--dark-blue btn--book" type="button" data-modal="#modalShopping">
+                    <svg class="btn__icon">
+                        <use fill="#fff" href="./assets/images/icons.svg#icon-cart"></use>
+                    </svg>
+                    <span>Book</span>
+                </button>
+            </article>
+            <!--/p-card-->
+
+            <article class="p-card">
+                <div>
+                    <div class="p-card__header">
+                        <h5 class="p-card__title">Promo site</h5>
+                    </div>
+                    <p class="p-card__price">
+                        € 800
+                    </p>
+
+                    <ul class="p-card__list">
+                        <li class="p-card__list-item">Description of activity</li>
+                        <li class="p-card__list-item">General information about products or services</li>
+                        <li class="p-card__list-item">News or blog</li>
+                        <li class="p-card__list-item">Photo gallery or price list</li>
+                        <li class="p-card__list-item">Contact us</li>
+                    </ul>
                 </div>
-                <!-- /col-3-->
-                <div class="col-3 col-lg-6 col-xs-12">
-                    <article class="t-card">
-                        <div class="t-card__header">
-                            <h5 class="t-card__title">E-shop</h5>
-                        </div>
-                        <div class="t-card__price">
-                            <p class="t-card__currency">€</p>
-                            <p class="t-card__value">2000</p>
-                        </div>
-                        <div class="t-card__body">
-                            <ul class="t-card__list">
-                                <li class="t-card__list-item">Catalog of goods and services</li>
-                                <li class="t-card__list-item">Online ordering</li>
-                                <li class="t-card__list-item">Shopping cart</li>
-                                <li class="t-card__list-item">Search by attributes</li>
-                                <li class="t-card__list-item">Contact us</li>
-                            </ul>
-                            <button data-modal="#modalShopping" class="btn btn--cart btn--cta btn--small">Book</button>
-                        </div>
-                    </article>
+                <button class="btn btn--default btn--dark-blue btn--book" type="button" data-modal="#modalShopping">
+                    <svg class="btn__icon">
+                        <use fill="#fff" href="./assets/images/icons.svg#icon-cart"></use>
+                    </svg>
+                    <span>Book</span>
+                </button>
+            </article>
+            <!--/p-card-->
+
+            <article class="p-card">
+                <div>
+                    <div class="p-card__header">
+                        <h5 class="p-card__title">E-shop</h5>
+                    </div>
+                    <div class="p-card__price">
+                        € 2000
+                    </div>
+
+                    <ul class="p-card__list">
+                        <li class="p-card__list-item">Catalog of goods and services</li>
+                        <li class="p-card__list-item">Online ordering</li>
+                        <li class="p-card__list-item">Shopping cart</li>
+                        <li class="p-card__list-item">Search by attributes</li>
+                        <li class="p-card__list-item">Contact us</li>
+                    </ul>
                 </div>
-                <!-- /col-3-->
-                <div class="col-3 col-lg-6 col-xs-12">
-                    <article class="t-card">
-                        <div class="t-card__header">
-                            <h5 class="t-card__title">Corporate site</h5>
-                        </div>
-                        <div class="t-card__price">
-                            <p class="t-card__currency">€</p>
-                            <p class="t-card__value">2000</p>
-                        </div>
-                        <div class="t-card__body">
-                            <ul class="t-card__list">
-                                <li class="t-card__list-item">My account</li>
-                                <li class="t-card__list-item">Catalog of goods or services</li>
-                                <li class="t-card__list-item">News subscription, newsletter</li>
-                                <li class="t-card__list-item">Classified information</li>
-                                <li class="t-card__list-item">Contact us</li>
-                            </ul>
-                            <button data-modal="#modalShopping" class="btn btn--cart btn--cta btn--small">Book</button>
-                        </div>
-                    </article>
+                <button class="btn btn--default btn--dark-blue btn--book" type="button" data-modal="#modalShopping">
+                    <svg class="btn__icon">
+                        <use fill="#fff" href="./assets/images/icons.svg#icon-cart"></use>
+                    </svg>
+                    <span>Book</span>
+                </button>
+            </article>
+            <!--/p-card-->
+
+            <article class="p-card">
+                <div>
+                    <div class="p-card__header">
+                        <h5 class="p-card__title">Corporate site</h5>
+                    </div>
+                    <div class="p-card__price">
+                        € 2000
+                    </div>
+                    <ul class="p-card__list">
+                        <li class="p-card__list-item">My account</li>
+                        <li class="p-card__list-item">Catalog of goods or services</li>
+                        <li class="p-card__list-item">News subscription, newsletter</li>
+                        <li class="p-card__list-item">Classified information</li>
+                        <li class="p-card__list-item">Contact us</li>
+                    </ul>
                 </div>
-                <!-- /col-3-->
-            </div>
+                <button class="btn btn--default btn--dark-blue btn--book" type="button" data-modal="#modalShopping">
+                    <svg class="btn__icon">
+                        <use fill="#fff" href="./assets/images/icons.svg#icon-cart"></use>
+                    </svg>
+                    <span>Book</span>
+                </button>
+            </article>
+            <!--/p-card-->
         </div>
+    </div>
+    <!--/pricing__main-->
     </div>
 </section>
 <!--/pricing -->

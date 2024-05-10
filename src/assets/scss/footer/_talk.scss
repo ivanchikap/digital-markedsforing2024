@@ -1,0 +1,10 @@
+.talk {
+  color: #fff !important;
+  &__container {
+    border-radius: 20px;
+    max-width: 90%;
+    background-color: $blue;
+    padding: 34px 80px;
+    box-shadow: 0 30px 60px 0 rgba($blue, 25%);
+  }
+}

@@ -2,7 +2,8 @@
   $root: &;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: baseline;
+  gap: 16px;
   cursor: pointer;
   font-size: 18px;
   font-family: $source-sans;
@@ -19,13 +20,24 @@
   }
 
   &--default {
-    padding: 15px 45px;
+    padding: 16px 45px;
   }
 
   &__icon {
-    width: 17px;
-    height: 17px;
-    margin-left: 16px;
+    padding-top: 2px;
+    width: 19px;
+    height: 19px;
+    transition: stoke .2s linear, fill .2s linear;
+  }
+
+  &--book {
+    width: 100%;
+    #{$root} {
+      &__icon {
+        width: 20px;
+        height: 18px;
+      }
+    }
   }
 
   &--shop {
@@ -33,6 +45,15 @@
       &__icon {
         fill: transparent;
         stroke: #fff;
+      }
+    }
+  }
+
+  &--send {
+    #{$root} {
+      &__icon {
+        fill: transparent;
+        stroke: $blue;
       }
     }
   }
@@ -58,6 +79,43 @@
 
     &:focus {
       background-color: $focused-blue;
+    }
+  }
+
+  &--dark-blue {
+    background-color: #473BF0;
+    color: $white;
+    transition: background-color .2s linear;
+
+    &:focus {
+      background-color: #3C30EA;
+    }
+
+    &:hover {
+      background-color: #2D20DF;
+    }
+  }
+
+  &--white {
+    background-color: #fff;
+    color: $blue;
+    box-shadow: 0 30px 60px 0 rgba($shadow-blue, 25%);
+    transition: color .2s linear;
+
+    &:focus {
+      color: #3C30EA;
+
+      .btn__icon {
+        stroke: #3C30EA;
+      }
+    }
+
+    &:hover {
+     color: #2D20DF;
+
+      .btn__icon {
+        stroke: #2D20DF;
+      }
     }
   }
 

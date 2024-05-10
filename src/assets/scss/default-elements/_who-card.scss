@@ -1,10 +1,11 @@
 .who-card {
   background-color: #fff;
+  color: $black;
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%);
-  padding: 30px;
+  transform: translate(-60%, -50%);
+  padding: 24px;
   max-width: 90%;
   max-height: 90%;
   box-shadow: 0 32px 54px 0 rgba(#0F0E23, 20%);
@@ -30,18 +31,19 @@
   &__name {
     font-size: 22px;
     line-height: 1.2;
-    color: $black;
+    @extend .text-overflow;
   }
 
   &__email {
     color: rgba($black, 30%);
     line-height: 1.2;
     font-size: 14px;
-    margin-bottom: 8px;
+    @extend .text-overflow;
   }
 
   &__position {
     color: rgba($black, 50%);
+    @extend .text-overflow;
   }
 
 
@@ -56,12 +58,32 @@
   }
 
   &__info-top-item {
-    padding: 14px 20px;
+    padding: 10px 14px;
     flex-grow: 1;
     flex-basis: 50%;
     &:last-child {
       border-left: 1px solid grey;
     }
+  }
+
+  &__info-name {
+
+  }
+
+  &__invites-number {
+    display: flex;
+    align-items: center;
+    color: #473BF0;
+    font-size: 26px;
+    font-weight: 600;
+  }
+
+  &__pending-number {
+    display: flex;
+    align-items: center;
+    color: #68D585;
+    font-size: 26px;
+    font-weight: 600;
   }
 
   &__info-bottom {
@@ -71,11 +93,13 @@
   }
 
   &__info-bottom-text {
-    padding: 14px 18px;
+    padding: 10px 14px;
   }
 
   &__graph {
     max-height: 50px;
     border-radius: 0 0 8px 8px;
+    @extend .img-cover;
+
   }
 }

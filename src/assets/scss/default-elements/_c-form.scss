@@ -1,46 +1,12 @@
 .c-form {
   $root: &;
-  position: relative;
-  z-index: 3;
-  margin: -30px auto -30px auto;
-  background-color: lighten(#2bb7f6, 20%);
-  height: 118%;
-  padding: 30px 20px;
-  border-radius: 12px;
-  box-shadow: -6px 6px 4px -2px rgba(0, 0, 0, .3);
-  @include tablet {
-    text-align: center;
-  }
-
-  @include mobile {
-    margin: -20px auto -20px auto;
-    height: 110%;
-  }
 
   &__group {
     display: flex;
-    margin: 40px 0;
-    gap: 12px 16px;
+    gap: 62px;
 
-    @include tablet {
-      justify-content: center;
-    }
-
-    @include mobile {
-      flex-direction: column;
-      gap: 18px 16px;
-      margin: 18px 0;
-    }
-  }
-
-  &__title {
-    font-family: $poppins;
-  }
-
-  .btn {
-    @include tablet {
-      width: 40%;
-      min-width: 220px;
+    &:first-child {
+      margin-bottom: 28px;
     }
   }
 
@@ -49,55 +15,53 @@
     width: 100%;
   }
 
-  &__label-text {
-    position: absolute;
-    text-transform: uppercase;
-    text-align: left;
-    display: block;
-    font-size: 18px;
-    padding-left: 20px;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-    color: grey;
-    transition: .2s;
-  }
-
   &__icon {
-    fill: grey;
+    fill: rgba(#fff, 50%);
+    width: 18px;
+    height: 18px;
     position: absolute;
-    right: 18px;
+    left: 8px;
     top: 50%;
     transform: translateY(-50%);
-    width: auto;
-    height: 20px;
     transition: .2s;
   }
 
   &__input {
-    padding: 12px 40px 12px 20px;
-    border-radius: 24px;
+    font-family: $source-sans;
     font-size: 18px;
+    font-weight: 300;
+    line-height: 1.66;
+    color: #fff;
+    cursor: text;
+    padding: 5px 40px;
     width: 100%;
-    box-shadow: -2px 2px 2px rgba(0, 0, 0, 0.2);
-    transition: all .1s linear;
+    background-color: transparent;
+    border-bottom: 1px solid rgba(#fff, 50%);
+
+    &:-webkit-autofill {
+      transition: all 5000s ease-in-out;
+      background-color: transparent !important;
+    }
 
     &::placeholder {
-      color: transparent;
+      font-family: $source-sans;
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 1.66;
+      color: rgba(#fff, 50%);
     }
 
     &:hover {
-      box-shadow: -4px 4px 2px rgba(0, 0, 0, 0.2);
+
     }
 
     &:focus {
-      ~ .c-form__label-text {
-        color: $black;
-        top: 0;
+      border-bottom-color: #fff;
+      &::placeholder {
+        color: transparent;
       }
-
       ~ .c-form__icon {
-        fill: $black;
+        fill: #fff;
       }
     }
   }
