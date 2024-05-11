@@ -163,13 +163,18 @@
     }
   }
 
-  &__default-list {
-    list-style-image: url("../images/angle.png");
-  }
-
   &__default-item {
     display: flex;
     align-items: center;
+
+    &::before {
+      content: '';
+      display: block;
+      width: 16px;
+      height: 16px;
+      background: url("../images/angle-right-white.svg") no-repeat center / contain;
+      margin-right: 8px;
+    }
     & + & {
       margin-top: 10px;
     }
