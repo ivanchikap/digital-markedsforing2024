@@ -15,12 +15,21 @@
   flex-shrink: 0;
   @extend .text-overflow;
 
+  @include mobile {
+    gap: 14px;
+    font-size: 16px;
+  }
+
   &--small {
     padding: 10px 25px;
   }
 
   &--default {
     padding: 16px 45px;
+
+    @include mobile {
+      padding: 14px 38px;
+    }
   }
 
   &__icon {

@@ -2,7 +2,7 @@
   position: relative;
   overflow: hidden;
   cursor: pointer;
-  height: 320px;
+  height: 300px;
 
   &:hover {
     .pr-card__img {
@@ -17,7 +17,7 @@
 
   &__item-desc {
     display: block;
-    font-family: $poppins;
+    font-family: $DMSans;
     padding: 10px;
     font-size: 30px;
     width: 100%;

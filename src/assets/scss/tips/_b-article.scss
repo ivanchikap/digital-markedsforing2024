@@ -6,12 +6,14 @@
   }
 
   &__title {
-    font-family: $poppins;
+    font-size: 40px;
     font-weight: 700;
-    font-size: 3.3rem;
-    line-height: 1.2;
-    color: lighten($black, .2);
+    text-transform: uppercase;
+    font-family: $DMSans;
     text-align: center;
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
 
     @include mobile-large {
       font-size: 2.8rem;
@@ -102,8 +104,10 @@
     flex-flow: column;
     padding: 5px;
     width: 40%;
+    border-radius: 10px;
     height: auto;
     margin: 0 0 15px 15px;
+    box-shadow: 0 10px 40px 0 rgba($shadow-blue, 0.18);
 
     @include tablet {
       margin: 0 0 8px 8px;
@@ -117,60 +121,23 @@
   }
 
   img.b-article__photo-img {
+    border-radius: 10px 10px 0 0;
     margin-bottom: 0;
     @extend .img-cover;
   }
 
   figcaption {
     background-color: $blue;
+    border-radius: 0 0 10px 10px;
     color: #fff;
     font: italic smaller sans-serif;
-    padding: 3px;
+    padding: 10px;
     text-align: center;
   }
 
   &__body {
     h1 {
-      font-size: 48px;
-
-      @include widescreen {
-        font-size: 46px;
-      }
-      @include laptop {
-        font-size: 44px;
-      }
-      @include tablet {
-        font-size: 42px;
-      }
-      @include mobile-large {
-        font-size: 40px;
-      }
-      @include mobile {
-        font-size: 36px;
-      }
-    }
-
-    h2 {
-      font-size: 44px;
-
-      @include widescreen {
-        font-size: 42px;
-      }
-      @include laptop {
-        font-size: 40px;
-      }
-      @include tablet {
-        font-size: 38px;
-      }
-      @include mobile-large {
-        font-size: 34px;
-      }
-      @include mobile {
-        font-size: 30px;
-      }
-    }
-
-    h3 {
+      text-transform: uppercase;
       font-size: 40px;
 
       @include widescreen {
@@ -185,53 +152,74 @@
       @include mobile-large {
         font-size: 32px;
       }
-      @include mobile {
+    }
+
+    h2 {
+      text-transform: uppercase;
+      font-size: 30px;
+
+      @include widescreen {
+        font-size: 30px;
+      }
+      @include laptop {
         font-size: 28px;
+      }
+      @include tablet {
+        font-size: 26px;
+      }
+      @include mobile-large {
+        font-size: 24px;
+      }
+    }
+
+    h3 {
+      text-transform: uppercase;
+      font-size: 22px;
+
+      @include widescreen {
+        font-size: 22px;
+      }
+      @include laptop {
+        font-size: 20px;
+      }
+      @include tablet {
+        font-size: 18px;
       }
     }
 
     h4 {
-      font-size: 36px;
+      text-transform: uppercase;
+      font-size: 20px;
 
       @include widescreen {
-        font-size: 34px;
+        font-size: 20px;
       }
       @include laptop {
-        font-size: 32px;
-      }
-      @include tablet {
-        font-size: 30px;
-      }
-      @include mobile-large {
-        font-size: 28px;
-      }
-      @include mobile {
-        font-size: 24px;
+        font-size: 18px;
       }
     }
 
     h5 {
-      font-size: 32px;
+      text-transform: uppercase;
+      font-size: 20px;
 
       @include widescreen {
-        font-size: 30px;
+        font-size: 20px;
       }
       @include laptop {
-        font-size: 28px;
-      }
-      @include tablet {
-        font-size: 26px;
+        font-size: 18px;
       }
     }
 
     h6 {
-      font-size: 28px;
+      text-transform: uppercase;
+      font-size: 20px;
 
       @include widescreen {
-        font-size: 26px;
+        font-size: 20px;
       }
       @include laptop {
-        font-size: 24px;
+        font-size: 18px;
       }
     }
 

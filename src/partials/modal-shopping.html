@@ -15,11 +15,15 @@
 
                 <ul class="shop__info">
                     <li class="shop__info-item">
-                        <i class="fas fa-phone-alt"></i>
+                        <svg class="modal__svg">
+                            <use href="./assets/images/icons.svg#icon-phone-alt"></use>
+                        </svg>
                         <a class="shop__info-link" href="tel:2001003000">(200) 100 3000</a>
                     </li>
                     <li class="shop__info-item">
-                        <i class="fas fa-envelope contact__info-icon"></i>
+                        <svg class="modal__svg">
+                            <use href="./assets/images/icons.svg#icon-email2"></use>
+                        </svg>
                         <a class="shop__info-link"  href="mailto:designer@ui43.com">designer@ui43.com</a>
                     </li>
                 </ul>
@@ -47,13 +51,18 @@
                         <input type="checkbox" class="form__element--checkbox" name="own-design" id="own-design">
                     </div>
                     <div class="form__btn">
-                        <button class="btn btn--black btn--small btn--plane" type="submit">Send</button>
+                        <button class="btn btn--small btn--blue" type="button">
+                            <span>Send</span>
+                            <svg fill="transparent" stroke="#fff" class="btn__icon">
+                                <use href="./assets/images/icons.svg#icon-arrow-right-circle"></use>
+                            </svg>
+                        </button>
                     </div>
                 </form>
             </div>
             <!--/shop__left-->
             <div class="shop__right">
-                <img src="assets/images/contact.jpg" alt="contact image">
+                <img src="./assets/images/contact.jpg" alt="contact image">
             </div>
             <!--/shop__right-->
         </div>

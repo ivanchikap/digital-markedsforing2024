@@ -1,14 +1,30 @@
 .sidebar {
   height: auto;
-  padding: 2rem;
+  padding: 5rem 4rem 4rem 5rem;
   position: fixed;
   right: 0;
-  top: 66px;
+  top: 85px;
   z-index: 10;
   border-radius: 0 0 0 12px;
-  background-color: rgba(0, 0, 0, .7);
+  box-shadow: 0 10px 50px 0 rgba(255, 255, 255, 0.28);
+  background-color: #fff;
   transform: translateX(101%);
   transition: transform .3s linear;
+
+  &__icon {
+    position: absolute;
+    left: 1.6rem;
+    top: 1.6rem;
+    width: 2.2rem;
+    height: 2.2rem;
+    stroke: $dark-blue;
+    cursor: pointer;
+    transition: transform .2s linear;
+
+    &:hover {
+      transform: translateY(-2px);
+    }
+  }
 
   .show-sidebar & {
     transform: translateX(0);

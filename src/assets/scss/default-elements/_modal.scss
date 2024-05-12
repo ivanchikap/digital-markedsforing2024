@@ -84,6 +84,12 @@
     }
   }
 
+  &__svg {
+    width: 16px;
+    height: 16px;
+    fill: $dark-blue;
+  }
+
   &__close {
     position: absolute;
     top: 1.3rem;
@@ -138,7 +144,7 @@
 
   &__title {
     font-size: 4.5rem;
-    font-family: $poppins;
+    font-family: $DMSans;
     font-weight: 700;
     text-transform: uppercase;
     text-align: center;

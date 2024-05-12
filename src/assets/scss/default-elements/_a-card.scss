@@ -15,7 +15,8 @@
     width: 100%;
     height: calc(100% - 32px);
     box-shadow: 0 10px 40px 0 rgba($shadow-blue, 0.08);
-
+    border-radius: 20px;
+    transition: box-shadow .2s linear;
   }
 
   &:hover {

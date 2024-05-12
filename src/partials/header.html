@@ -1,41 +1,41 @@
-<div class="container ">
-    <div class="header__container">
-        <button class="burger" id="burger">
-            <span>open navigation</span>
-        </button>
-        <a href="./index.html" class="logo">
-            <img src="assets/images/color-logo.svg" alt="logo">
-            <img src="assets/images/logo-mobile.svg" alt="logo-mobile">
-        </a>
-        <!-- /logo-->
-        <nav class="nav">
-            <ul class="nav__list">
-                <li class="nav__item nav__item--active">
-                    <a href="./about.html">About Us</a>
-                </li>
-                <li class="nav__item">
-                    <a href="./services.html">Services</a>
-                </li>
-                <li class="nav__item">
-                    <a href="./nettsidepakker.html">nettsiderpakker</a>
-                </li>
-                <li class="nav__item">
-                    <a href="./projects.html">Projects</a>
-                </li>
-                <li class="nav__item">
-                    <a href="./tips.html">Tips</a>
-                </li>
-            </ul>
-        </nav>
-        <!-- /nav-->
-        <button id="shopping-cart" data-modal="#modalShopping" class="btn btn--blue btn--small" type="button">Shop</button>
+<header class="header header--fixed">
+    <div class="container">
+        <div class="header__container">
+            <a href="./index.html" class="logo">
+                <img src="assets/images/color-logo.svg" alt="logo">
+                <img src="assets/images/logo-mobile.svg" alt="logo-mobile">
+            </a>
+            <!-- /logo-->
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item nav__item--active">
+                        <a href="./about.html">About Us</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="./services.html">Services</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="./nettsidepakker.html">nettsiderpakker</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="./projects.html">Projects</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="./tips.html">Tips</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- /nav-->
+            <div class="header__actions">
+                <button id="shopping-cart" data-modal="#modalShopping" class="btn btn--blue btn--small" type="button">
+                    Shop
+                </button>
+                <button class="burger" id="burger">
+                    <svg class="burger__icon">
+                        <use href="./assets/images/icons.svg#icon-menu"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
     </div>
-</div>
-
-
-
-
-
-
-
-
+</header>

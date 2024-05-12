@@ -26,25 +26,24 @@
 
       @include mobile-large {
         justify-content: flex-start;
-        margin-left: 26px;
+        margin-left: 0;
       }
     }
   }
 
   &__label {
     display: inline-block;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     font-weight: 700;
-    margin-bottom: 0.8rem;
-    margin-left: 26px;
   }
 
   &__element {
     display: block;
     padding: 1.5rem 2.6rem;
     width: 100%;
-    border-radius: 2.7rem;
+    border-radius: 8px;
     border: 1px solid rgba(#707070, .3);
+    box-shadow: 0 10px 60px 0 rgba($shadow-blue, .08);
     color: $black;
     font-size: 1.2rem;
     transition: border .1s linear;
@@ -56,6 +55,7 @@
 
     &:focus {
       border-color: #eee;
+      box-shadow: none;
     }
 
     &::placeholder {

@@ -2,57 +2,167 @@
 layout: default
 title: Projects
 ---
-<section class="banner banner--alt" style="background-image: url('assets/images/team.jpg')">
+<section class="banner">
     <div class="container">
-        <div class="banner__info">
-            <h1>Our projects</h1>
-            <div class="banner__info-text">
-                <h3>We do some projects</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aperiam consequatur cum debitis eum
-                    expedita natus nisi soluta veritatis voluptatibus. </p>
+        <div class="banner__container">
+            <div class="banner__info">
+                <h4 class="banner__page-name">About us</h4>
+                <h1 class="banner__page-title">Lorem ipsum dolor sit amet, consectetur </h1>
+                <p class="banner__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, </p>
+                <div class="banner__actions">
+                    <button class="btn btn--default btn--blue btn--shop" type="button" data-modal="#modalShopping">
+                        <span>Shop</span>
+                        <svg class="btn__icon">
+                            <use href="./assets/images/icons.svg#icon-arrow-right-circle"></use>
+                        </svg>
+                    </button>
+                    <a href="#talk" class="btn btn--default btn--light btn--email btn-anchor-js" type="button">
+                        <span>Mail Us</span>
+                        <svg class="btn__icon">
+                            <use href="./assets/images/icons.svg#icon-mail"></use>
+                        </svg>
+                    </a>
+                </div>
+                <div class="banner__siteinfo">
+                    <div class="siteinfo">
+                        <svg class="siteinfo__icon">
+                            <use href="./assets/images/icons.svg#icon-download"></use>
+                        </svg>
+                        <div class="siteinfo__info">
+                            <p class="siteinfo__name">TOTAL DON’TLOUD</p>
+                            <p class="siteinfo__number">1,501,234</p>
+                        </div>
+                    </div>
+                    <!--/siteinfo-->
+                    <div class="siteinfo">
+                        <svg class="siteinfo__icon">
+                            <use href="./assets/images/icons.svg#icon-user"></use>
+                        </svg>
+                        <div class="siteinfo__info">
+                            <p class="siteinfo__name">TOTAL USERS</p>
+                            <p class="siteinfo__number">1,318,829</p>
+                        </div>
+                    </div>
+                    <!--/siteinfo-->
+                </div>
             </div>
-        </div>
-        <!-- /banner__info-->
+            <!--  /banner__info-->
+            <div class="banner__img-wrapper">
 
+                <img class="banner__img" src="./assets/images/banner-photo.jpg"
+                     srcset="./assets/images/banner-photo.jpg 1x, ./assets/images/banner-photo@2x.jpg 2x"
+                     alt="banner photo">
+
+            </div>
+            <!--/banner__img-wrapper-->
+        </div>
     </div>
 </section>
 <!--/banner-->
 
-<section class="section projects services--swiper">
-    <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">
-                <article class="pr-card" data-modal="#modalProject">
-                    <span class="pr-card__item-desc">Project 1</span>
-                    <img class="pr-card__img" src="assets/images/site1.jpg" alt="site 1">
-                </article>
+<div class="main__wrapper">
+    <section class="section projects services--swiper">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <article class="pr-card" data-modal="#modalProject">
+                        <span class="pr-card__item-desc">Project 1</span>
+                        <img class="pr-card__img" src="assets/images/site1.jpg" alt="site 1">
+                    </article>
+                </div>
+                <!--/swiper-slide-->
+                <div class="swiper-slide">
+                    <article class="pr-card" data-modal="#modalProject">
+                        <span class="pr-card__item-desc">Project 2</span>
+                        <img class="pr-card__img" src="assets/images/site2.jpg" alt="site 1">
+                    </article>
+                </div>
+                <!--/swiper-slide-->
+                <div class="swiper-slide">
+                    <article class="pr-card" data-modal="#modalProject">
+                        <span class="pr-card__item-desc">Project 3</span>
+                        <img class="pr-card__img" src="assets/images/after.jpg" alt="site 3">
+                    </article>
+                </div>
+                <!--/swiper-slide-->
+                <div class="swiper-slide">
+                    <article class="pr-card" data-modal="#modalProject">
+                        <span class="pr-card__item-desc">Project 4</span>
+                        <img class="pr-card__img" src="assets/images/before.jpg" alt="site 4">
+                    </article>
+                </div>
+                <!--/swiper-slide-->
+                <div class="swiper-slide">
+                    <article class="pr-card" data-modal="#modalProject">
+                        <span class="pr-card__item-desc">Project 2</span>
+                        <img class="pr-card__img" src="assets/images/site2.jpg" alt="site 1">
+                    </article>
+                </div>
+                <!--/swiper-slide-->
             </div>
-            <!--/swiper-slide-->
-            <div class="swiper-slide">
-                <article class="pr-card" data-modal="#modalProject">
-                    <span class="pr-card__item-desc">Project 2</span>
-                    <img class="pr-card__img" src="assets/images/site2.jpg" alt="site 1">
-                </article>
-            </div>
-            <!--/swiper-slide-->
-            <div class="swiper-slide">
-                <article class="pr-card" data-modal="#modalProject">
-                    <span class="pr-card__item-desc">Project 3</span>
-                    <img class="pr-card__img" src="assets/images/after.jpg" alt="site 3">
-                </article>
-            </div>
-            <!--/swiper-slide-->
-            <div class="swiper-slide">
-                <article class="pr-card" data-modal="#modalProject">
-                    <span class="pr-card__item-desc">Project 4</span>
-                    <img class="pr-card__img" src="assets/images/before.jpg" alt="site 4">
-                </article>
-            </div>
-            <!--/swiper-slide-->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
         </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-pagination"></div>
-    </div>
-</section>
-<!--/services-->
+    </section>
+    <!--/services-->
+
+    <section id="talk" class="section talk">
+        <div class="container">
+            <div class="talk__container">
+                <div class="section__header">
+                    <h2 class="section__title">Want to talk to us more?</h2>
+                    <p class="section__subtitle">
+                        Write to us we call you. Lorem ipsum dolor sit amet, consectetur.
+                    </p>
+                </div>
+                <div class="talk__form">
+                    <form class="c-form" autocomplete="off">
+                        <div class="c-form__group">
+                            <label class="c-form__label">
+                                <input autocomplete="off" name="fullname" class="c-form__input" type="text"
+                                       placeholder="Foretakstnavn">
+                                <svg class="c-form__icon">
+                                    <use href="./assets/images/icons.svg#icon-company"></use>
+                                </svg>
+                            </label>
+                            <label class="c-form__label">
+                                <input autocomplete="off" name="ditt" class="c-form__input" type="text"
+                                       placeholder="Ditt Navn">
+                                <svg class="c-form__icon">
+                                    <use href="./assets/images/icons.svg#icon-user2"></use>
+                                </svg>
+                            </label>
+                        </div>
+                        <div class="c-form__group">
+                            <label class="c-form__label">
+                                <input autocomplete="off" class="c-form__input" name="subject" type="tel"
+                                       placeholder="096 333 33 33">
+                                <svg class="c-form__icon">
+                                    <use href="./assets/images/icons.svg#icon-phone"></use>
+                                </svg>
+                            </label>
+                            <label class="c-form__label">
+                                <input autocomplete="off" class="c-form__input" placeholder="some@emial.com"
+                                       name="email">
+                                <svg class="c-form__icon">
+                                    <use href="./assets/images/icons.svg#icon-email2"></use>
+                                </svg>
+                            </label>
+                        </div>
+                        <button class="btn btn--default btn--white btn--send" type="button">
+                            <span>Send</span>
+                            <svg class="btn__icon">
+                                <use href="./assets/images/icons.svg#icon-arrow-right-circle"></use>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/talk-->
+</div>
+

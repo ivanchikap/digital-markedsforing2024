@@ -1,9 +1,11 @@
 .logo {
+  display: flex;
   flex-shrink: 0;
   max-width: 280px;
 
   @include mobile {
-    max-width: 60px;
+    width: 60px;
+    height: 60px;
   }
 
   img {

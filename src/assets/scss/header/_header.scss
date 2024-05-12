@@ -5,11 +5,14 @@
   left: 0;
   width: 100%;
   z-index: 9;
-
   background-image: url('../images/bg.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+
+  @include mobile {
+    padding: 13px 0;
+  }
 
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     background-image: url('../images/bg@2x.jpg');
@@ -23,5 +26,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+
+  &__actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
   }
 }

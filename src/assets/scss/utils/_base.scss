@@ -24,7 +24,7 @@ body {
 
 }
 
-main {
+.main__wrapper {
   padding: 55px 0;
 }
 
@@ -52,7 +52,7 @@ footer {
 
 
   .show-sidebar & {
-    background-color: rgba(0,0,0,.5);
+    background-color: rgba(0,0,0,.2);
     z-index: 8;
   }
 }
@@ -65,74 +65,55 @@ footer {
   overflow: hidden;
 }
 
+.link-decor-on-hover {
+  &:hover {
+    text-decoration: underline;
+  }
+}
 
 
-//
-//
-//.link {
-//  transition: color .2s linear;
-//
-//  &--footer {
-//    color: $blue;
-//  }
-//
-//  &:hover {
-//    color: $blue;
-//  }
-//}
-//.link-decor-on-hover {
-//  transition: all .3s linear;
-//  &:hover {
-//    text-decoration: underline !important;
-//  }
-//}
-//
-//.color-blue {
-//  color: $blue;
-//}
-//
-//.link {
-//  display: flex;
-//  align-items: center;
-//  font-family: $poppins;
-//  font-size: 2rem;
-//  font-weight: 600;
-//  color: $black;
-//  @extend .text-overflow;
-//  transition: color .2s linear;
-//
-//  @include mobile-large {
-//    font-size: 1.8rem;
-//  }
-//
-//  &:hover {
-//    color: $blue;
-//  }
-//
-//  &--in {
-//    justify-content: flex-end;
-//    &::after {
-//      content: '>';
-//      display: block;
-//    }
-//  }
-//
-//  &--out {
-//    max-width: calc(100% - 22rem);
-//    padding-right: 1rem;
-//    justify-content: flex-start;
-//
-//    &::before {
-//      content: '<';
-//      display: block;
-//
-//      @include mobile-large {
-//        margin-right: .5rem;
-//      }
-//    }
-//
-//    @include mobile {
-//      max-width: 100%;
-//    }
-//  }
-//}
+.link {
+  display: flex;
+  align-items: center;
+  font-family: $DMSans;
+  font-size: 2rem;
+  font-weight: 600;
+  color: $black;
+  @extend .text-overflow;
+  transition: color .2s linear;
+
+  @include mobile-large {
+    font-size: 1.8rem;
+  }
+
+  &:hover {
+    color: $blue;
+  }
+
+  &--in {
+    justify-content: flex-end;
+    &::after {
+      content: '>';
+      display: block;
+    }
+  }
+
+  &--out {
+    max-width: calc(100% - 22rem);
+    justify-content: flex-start;
+
+    &::before {
+      content: '<';
+      display: block;
+      margin-right: 1rem;
+
+      @include mobile-large {
+        margin-right: .5rem;
+      }
+    }
+
+    @include mobile {
+      max-width: 100%;
+    }
+  }
+}

@@ -2,26 +2,71 @@
 layout: default
 title: Projects
 ---
-<section class="banner banner--alt" style="background-image:  url('assets/images/team.jpg')">
+<section class="banner">
     <div class="container">
-        <div class="banner__info">
-            <h1>Our tips</h1>
-            <div class="banner__info-text">
-                <h3>Blog news</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aperiam consequatur cum debitis eum
-                    expedita natus nisi soluta veritatis voluptatibus. </p>
+        <div class="banner__container">
+            <div class="banner__info">
+                <h4 class="banner__page-name">About us</h4>
+                <h1 class="banner__page-title">Lorem ipsum dolor sit amet, consectetur </h1>
+                <p class="banner__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, </p>
+                <div class="banner__actions">
+                    <button class="btn btn--default btn--blue btn--shop" type="button" data-modal="#modalShopping">
+                        <span>Shop</span>
+                        <svg class="btn__icon">
+                            <use href="./assets/images/icons.svg#icon-arrow-right-circle"></use>
+                        </svg>
+                    </button>
+                    <a href="#talk" class="btn btn--default btn--light btn--email btn-anchor-js" type="button">
+                        <span>Mail Us</span>
+                        <svg class="btn__icon">
+                            <use href="./assets/images/icons.svg#icon-mail"></use>
+                        </svg>
+                    </a>
+                </div>
+                <div class="banner__siteinfo">
+                    <div class="siteinfo">
+                        <svg class="siteinfo__icon">
+                            <use href="./assets/images/icons.svg#icon-download"></use>
+                        </svg>
+                        <div class="siteinfo__info">
+                            <p class="siteinfo__name">TOTAL DON’TLOUD</p>
+                            <p class="siteinfo__number">1,501,234</p>
+                        </div>
+                    </div>
+                    <!--/siteinfo-->
+                    <div class="siteinfo">
+                        <svg class="siteinfo__icon">
+                            <use href="./assets/images/icons.svg#icon-user"></use>
+                        </svg>
+                        <div class="siteinfo__info">
+                            <p class="siteinfo__name">TOTAL USERS</p>
+                            <p class="siteinfo__number">1,318,829</p>
+                        </div>
+                    </div>
+                    <!--/siteinfo-->
+                </div>
             </div>
-        </div>
-        <!-- /banner__info-->
+            <!--  /banner__info-->
+            <div class="banner__img-wrapper">
 
+                <img class="banner__img" src="./assets/images/banner-photo.jpg"
+                     srcset="./assets/images/banner-photo.jpg 1x, ./assets/images/banner-photo@2x.jpg 2x"
+                     alt="banner photo">
+
+            </div>
+            <!--/banner__img-wrapper-->
+        </div>
     </div>
 </section>
 <!--/banner-->
 
-<section class="section tips">
-    <div class="container">
-        <div class="row">
-            <div class="col-4 col-lg-6 col-sm-12">
+
+<div class="main__wrapper">
+    <section class="section tips">
+        <div class="container">
+            <div class="tips__container">
                 <article class="article">
                     <a href="./news-item.html" class="article__img">
                         <img src="assets/images/news1.jpg" alt="news photo">
@@ -51,9 +96,7 @@ title: Projects
                     </div>
 
                 </article>
-            </div>
-            <!-- /col-4-->
-            <div class="col-4 col-lg-6 col-sm-12">
+
                 <article class="article">
                     <a href="./news-item.html" class="article__img">
                         <img src="assets/images/news2.jpg" alt="news photo">
@@ -83,9 +126,7 @@ title: Projects
                     </div>
 
                 </article>
-            </div>
-            <!-- /col-4-->
-            <div class="col-4 col-lg-6 col-sm-12">
+
                 <article class="article">
                     <a href="#" class="article__img">
                         <img src="assets/images/before.jpg" alt="news photo">
@@ -115,9 +156,7 @@ title: Projects
                     </div>
 
                 </article>
-            </div>
-            <!-- /col-4-->
-            <div class="col-4 col-lg-6 col-sm-12">
+
                 <article class="article">
                     <a href="#" class="article__img">
                         <img src="assets/images/after.jpg" alt="news photo">
@@ -147,9 +186,7 @@ title: Projects
                     </div>
 
                 </article>
-            </div>
-            <!-- /col-4-->
-            <div class="col-4 col-lg-6 col-sm-12">
+
                 <article class="article">
                     <a href="#" class="article__img">
                         <img src="assets/images/site1.jpg" alt="news photo">
@@ -179,9 +216,7 @@ title: Projects
                     </div>
 
                 </article>
-            </div>
-            <!-- /col-4-->
-            <div class="col-4 col-lg-6 col-sm-12">
+
                 <article class="article">
                     <a href="#" class="article__img">
                         <img src="assets/images/site2.jpg" alt="news photo">
@@ -209,14 +244,67 @@ title: Projects
                         </p>
                         <a href="#" class="article__link">View More</a>
                     </div>
-
                 </article>
             </div>
-            <!-- /col-4-->
+            <div class="tips__btn">
+                <button class="btn btn--default btn--blue">Load More</button>
+            </div>
         </div>
-       <div class="btn__wrapper">
-           <button class="btn btn--black">Load More</button>
-       </div>
-    </div>
-</section>
-<!--/services-->
+    </section>
+    <!--/tips-->
+
+    <section id="talk" class="section talk">
+        <div class="container">
+            <div class="talk__container">
+                <div class="section__header">
+                    <h2 class="section__title">Want to talk to us more?</h2>
+                    <p class="section__subtitle">
+                        Write to us we call you. Lorem ipsum dolor sit amet, consectetur.
+                    </p>
+                </div>
+                <div class="talk__form">
+                    <form class="c-form" autocomplete="off">
+                        <div class="c-form__group">
+                            <label class="c-form__label">
+                                <input autocomplete="off" name="fullname" class="c-form__input" type="text"
+                                       placeholder="Foretakstnavn">
+                                <svg class="c-form__icon">
+                                    <use href="./assets/images/icons.svg#icon-company"></use>
+                                </svg>
+                            </label>
+                            <label class="c-form__label">
+                                <input autocomplete="off" name="ditt" class="c-form__input" type="text"
+                                       placeholder="Ditt Navn">
+                                <svg class="c-form__icon">
+                                    <use href="./assets/images/icons.svg#icon-user2"></use>
+                                </svg>
+                            </label>
+                        </div>
+                        <div class="c-form__group">
+                            <label class="c-form__label">
+                                <input autocomplete="off" class="c-form__input" name="subject" type="tel"
+                                       placeholder="096 333 33 33">
+                                <svg class="c-form__icon">
+                                    <use href="./assets/images/icons.svg#icon-phone"></use>
+                                </svg>
+                            </label>
+                            <label class="c-form__label">
+                                <input autocomplete="off" class="c-form__input" placeholder="some@emial.com" name="email">
+                                <svg class="c-form__icon">
+                                    <use href="./assets/images/icons.svg#icon-email2"></use>
+                                </svg>
+                            </label>
+                        </div>
+                        <button class="btn btn--default btn--white btn--send" type="button">
+                            <span>Send</span>
+                            <svg class="btn__icon">
+                                <use href="./assets/images/icons.svg#icon-arrow-right-circle"></use>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/talk-->
+</div>

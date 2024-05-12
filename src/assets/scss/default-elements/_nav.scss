@@ -1,11 +1,42 @@
 .nav {
+  $root: &;
   padding: 0 30px;
   flex-grow: 1;
+
+  @include laptop {
+    padding: 0 24px;
+  }
+
+  @include tablet {
+    display: none;
+  }
+
+  &--sidebar {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    gap: 20px;
+
+    #{$root} {
+      &__list {
+        flex-direction: column;
+      }
+
+      &__item {
+        font-size: 20px;
+      }
+    }
+  }
 
   &__list {
     display: flex;
     justify-content: center;
-    gap: 65px;
+    flex-wrap: wrap;
+    gap: 20px 65px ;
+
+    @include laptop {
+      gap: 20px 40px ;
+    }
   }
 
   &__item {
