@@ -5,6 +5,15 @@
     display: flex;
     gap: 62px;
 
+    @include tablet {
+      gap: 40px;
+    }
+
+    @include mobile-large {
+      flex-direction: column;
+      gap: 28px;
+    }
+
     &:first-child {
       margin-bottom: 28px;
     }

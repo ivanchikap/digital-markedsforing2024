@@ -1,7 +1,9 @@
 .pricing {
+  background-color: $bg-white;
   &__main {
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
+    justify-content: space-around;
   }
 }

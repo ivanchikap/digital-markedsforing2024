@@ -3,8 +3,20 @@
   border: 1px solid $grey;
   background-color: #fff;
   position: relative;
-  max-width: 400px;
+  max-width: 440px;
   padding: 14px 26px 24px 26px;
+
+  @include tablet {
+    padding: 10px 22px 20px 22px;
+    max-width: 340px;
+  }
+
+  @include mobile {
+    max-width: 440px;
+    padding: 14px 26px 24px 26px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
   &::before {
     content: '';
@@ -13,11 +25,20 @@
     height: 52px;
     background: url("../images/brackets.jpg") no-repeat center / contain;
     margin-bottom: 8px;
+
+    @include tablet {
+      width: 32px;
+      height: 42px;
+    }
   }
 
   &__text {
     margin-bottom: 30px;
     text-align: left;
+
+    @include tablet {
+      margin-bottom: 24px;
+    }
   }
 
   &__author {

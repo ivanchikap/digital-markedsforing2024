@@ -7,16 +7,70 @@
     padding-bottom: 238px;
     display: flex;
     gap: 62px;
+
+    @include tablet {
+      gap: 32px;
+    }
+
+    @include mobile-large {
+      gap: 20px;
+      padding-bottom: 392px;
+    }
+
+    @include mobile {
+      display: block;
+      padding-bottom: 0;
+    }
   }
 
   &__img {
     border-radius: 20px;
-    flex-basis: 367px;
+    flex-basis: calc(30% - 62px);
     height: 400px;
     overflow: hidden;
 
+    @include laptop {
+      flex-basis: calc(40% - 62px);
+    }
+
+    @include tablet {
+      flex-basis: calc(44% - 32px);
+      height: 360px;
+    }
+
+    @include mobile-large {
+      flex-basis: calc(44% - 20px);
+      height: 308px;
+    }
+
+    @include mobile {
+      display: none;
+    }
+
     img {
       @extend .img-cover;
+    }
+  }
+
+  .section__header {
+    max-width: calc(50% - 62px);
+
+    @include tablet {
+      flex-grow: 1;
+      max-width: 56%;
+    }
+
+    @include mobile {
+      max-width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+    }
+
+    br {
+      @include mobile-large {
+        display: none;
+      }
     }
   }
 
@@ -25,14 +79,35 @@
     z-index: 3;
     left: 183px;
     top: 219px;
-    width: 1140px;
-    height: 340px;
+    width: 100%;
+
+    @include laptop {
+      left: 134px;
+    }
+
+    @include mobile-large {
+      left: 40px;
+      top: 268px;
+      width: 120%;
+    }
+
+    @include mobile {
+      width: 100%;
+    }
+
+    @include mobile {
+      position: static;
+    }
   }
 
   .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
     margin-top: 54px;
     display: flex;
     justify-content: center;
+
+    @include laptop {
+      margin-top: 34px;
+    }
   }
 
   .swiper-pagination-bullet {

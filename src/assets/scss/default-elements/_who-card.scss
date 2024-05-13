@@ -11,6 +11,11 @@
   box-shadow: 0 32px 54px 0 rgba(#0F0E23, 20%);
   border-radius: 20px;
 
+  @include mobile {
+    border-radius: 14px;
+    transform: translate(-50%, -50%);
+  }
+
   &__author {
     display: flex;
     gap: 14px;
@@ -64,10 +69,6 @@
     &:last-child {
       border-left: 1px solid grey;
     }
-  }
-
-  &__info-name {
-
   }
 
   &__invites-number {

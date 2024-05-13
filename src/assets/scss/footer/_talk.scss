@@ -1,5 +1,15 @@
 .talk {
   color: #fff !important;
+
+  .section__header {
+    @include tablet {
+      max-width: 79%;
+    }
+
+    @include mobile {
+      max-width: 90%;
+    }
+  }
   &__container {
     border-radius: 20px;
     max-width: 90%;
@@ -8,5 +18,15 @@
     background-color: $blue;
     padding: 34px 80px;
     box-shadow: 0 30px 60px 0 rgba($blue, 25%);
+
+    @include tablet {
+      padding: 28px 50px;
+    }
+
+    @include mobile {
+      border-radius: 14px;
+      max-width: 96%;
+      padding: 28px;
+    }
   }
 }

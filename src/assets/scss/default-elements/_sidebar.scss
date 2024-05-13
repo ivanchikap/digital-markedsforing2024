@@ -18,11 +18,13 @@
     width: 2.2rem;
     height: 2.2rem;
     stroke: $dark-blue;
+    fill: $dark-blue;
     cursor: pointer;
+    transform: rotate(-10deg);
     transition: transform .2s linear;
 
     &:hover {
-      transform: translateY(-2px);
+      transform: rotate(0);
     }
   }
 

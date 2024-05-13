@@ -7,10 +7,6 @@
 
   .swiper-wrapper {
     padding-bottom: 50px;
-
-    @include mobile {
-      padding-bottom: 35px;
-    }
   }
 
   .swiper-button-next, .swiper-button-prev {

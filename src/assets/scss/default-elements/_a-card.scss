@@ -4,8 +4,18 @@
   position: relative;
   padding-top: 32px;
   flex-basis: calc(33.3333% - 40px);
-  max-width: calc(33.3333% - 40px);
+  max-width: 33.3333%;
   flex-grow: 1;
+
+  @include tablet {
+    flex-basis: calc(50% - 40px);
+    max-width: 50%;
+  }
+
+  @include mobile {
+    flex-basis: 100%;
+    max-width: 400px;
+  }
 
   &::before {
     content: '';
@@ -42,6 +52,11 @@
     background-color: #E2E1F7;
     border-radius: 8px;
     transition: transform .2s ease-in-out;
+
+    @include mobile-large {
+      width: 74px;
+      height: 74px;
+    }
 
     &::before {
       content: '';
@@ -95,7 +110,7 @@
 
   &--online-ads {
     .a-card__icon::before {
-      background-position: 0px 0px;
+      background-position: 0 0;
       width: 40px;
       height: 40px;
     }
@@ -104,7 +119,7 @@
   //will be new icon
   &--some-ads {
     .a-card__icon::before {
-      background-position: 0px 0px;
+      background-position: 0 0;
       width: 40px;
       height: 40px;
     }
@@ -113,7 +128,7 @@
   //will be new icon
   &--content {
     .a-card__icon::before {
-      background-position: 0px 0px;
+      background-position: 0 0;
       width: 40px;
       height: 40px;
     }
@@ -122,9 +137,14 @@
   &__inner {
     background-color: #fff;
     text-align: center;
+    height: 100%;
     padding: 66px 18px 22px 18px;
     box-shadow: 0 10px 60px 0 rgba($shadow-blue, 8%);
     border-radius: 20px;
+
+    @include mobile-large {
+      padding: 58px 14px 18px 14px;
+    }
   }
 
   &__title {
@@ -134,6 +154,11 @@
     line-height: 1.2;
     text-transform: uppercase;
     margin-bottom: 14px;
+
+    @include mobile-large {
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
   }
 
   &__text {

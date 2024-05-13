@@ -5,16 +5,41 @@
   flex-grow: 1;
   background-color: #fff;
   text-align: center;
-  border-radius: 8px;
+  border-radius: 14px;
   box-shadow: 0 10px 20px 0 rgba($shadow-blue, 0.08);
   overflow: hidden;
   transition: all .2s linear;
+
+  @include tablet {
+    flex-basis: calc(50% - 24px);
+    max-width: 50%;
+  }
+
+  @include mobile {
+    flex-basis: 100%;
+    max-width: 340px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
   &__img {
     height: 300px;
     width: 100%;
     overflow: hidden;
     position: relative;
+
+    @include laptop {
+      height: 280px;
+    }
+    @include tablet {
+      height: 320px;
+    }
+    @include mobile-large {
+      height: 280px;
+    }
+    @include mobile {
+      height: 320px;
+    }
 
     img {
       width: 100%;
