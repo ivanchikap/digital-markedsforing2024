@@ -211,18 +211,6 @@ table {
     }
 }
 
-.container-fluid {
-    width: 100%;
-    padding: 0 15px;
-    margin: 0 auto;
-}
-
-@media screen and (max-width: 576px) {
-    .container-fluid {
-        padding: 0 10px;
-    }
-}
-
 html {
     font-size: 62.5%;
 }
@@ -1055,51 +1043,51 @@ footer {
 }
 
 .a-card--seo .a-card__icon::before {
-    background-position: -78px 0px;
+    background-position: 0px -78px;
     width: 38px;
     height: 38px;
 }
 
 .a-card--sem .a-card__icon::before {
-    background-position: -38px -40px;
+    background-position: -78px -38px;
     width: 38px;
     height: 38px;
 }
 
 .a-card--ecommerce .a-card__icon::before {
-    background-position: -40px 0px;
+    background-position: -38px -40px;
     width: 38px;
     height: 38px;
 }
 
 .a-card--google .a-card__icon::before {
-    background-position: 0px -40px;
+    background-position: -78px 0px;
     width: 38px;
     height: 38px;
 }
 
 .a-card--banner-ads .a-card__icon::before {
-    background-position: -78px -38px;
+    background-position: -38px -78px;
     width: 36px;
     height: 36px;
 }
 
 .a-card--online-ads .a-card__icon::before {
-    background-position: 0 0;
+    background-position: 0px 0px;
     width: 40px;
     height: 40px;
 }
 
 .a-card--some-ads .a-card__icon::before {
-    background-position: 0 0;
-    width: 40px;
-    height: 40px;
+    background-position: -40px 0px;
+    width: 38px;
+    height: 38px;
 }
 
 .a-card--content .a-card__icon::before {
-    background-position: 0 0;
-    width: 40px;
-    height: 40px;
+    background-position: 0px -40px;
+    width: 38px;
+    height: 38px;
 }
 
 .a-card__inner {
