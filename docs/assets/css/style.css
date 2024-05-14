@@ -2976,10 +2976,6 @@ footer {
     margin: 0 8px;
 }
 
-.services {
-    background-color: #F4F7FA;
-}
-
 .services__container {
     display: -ms-flexbox;
     display: flex;
