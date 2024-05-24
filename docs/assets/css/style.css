@@ -2450,45 +2450,21 @@ footer {
     }
 }
 
-@-webkit-keyframes appearFromBottom {
-    0% {
-        opacity: 0;
-        -webkit-transform: translate(-50%, 50%);
-        transform: translate(-50%, 50%);
-    }
-
-    100% {
-        opacity: 1;
-        -webkit-transform: translate(-50%, 0);
-        transform: translate(-50%, 0);
-    }
-}
-
-@keyframes appearFromBottom {
-    0% {
-        opacity: 0;
-        -webkit-transform: translate(-50%, 50%);
-        transform: translate(-50%, 50%);
-    }
-
-    100% {
-        opacity: 1;
-        -webkit-transform: translate(-50%, 0);
-        transform: translate(-50%, 0);
-    }
-}
-
 .cookies {
     position: fixed;
     bottom: 0;
     left: 50%;
-    -webkit-transform: translate(-50%, 0);
-    transform: translate(-50%, 0);
+    opacity: 0;
+    -webkit-transform: translate(-50%, 50%);
+    transform: translate(-50%, 50%);
     border-radius: 20px 20px 0 0;
     background-color: #fff;
     z-index: 19;
     padding: 30px;
     box-shadow: 0 -30px 60px 0 rgba(74, 114, 255, 0.25);
+    transition: opacity 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+    transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
+    transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
 }
 
 @media screen and (max-width: 576px) {
@@ -2502,13 +2478,10 @@ footer {
     max-width: 90%;
 }
 
-.cookies--animated {
-    -webkit-animation-name: appearFromBottom;
-    animation-name: appearFromBottom;
-    -webkit-animation-duration: 0.2s;
-    animation-duration: 0.2s;
-    -webkit-animation-timing-function: ease-in-out;
-    animation-timing-function: ease-in-out;
+.cookies--appear {
+    opacity: 1;
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
 }
 
 .cookies__actions {

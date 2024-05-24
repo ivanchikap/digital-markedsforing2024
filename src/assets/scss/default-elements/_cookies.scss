@@ -1,25 +1,15 @@
-@keyframes appearFromBottom {
-  0% {
-    opacity: 0;
-    transform: translate(-50%, 50%);
-  } 50% {
-
-      }
-  100% {
-    opacity: 1;
-    transform: translate(-50%, 0);
-  }
-}
 .cookies {
   position: fixed;
   bottom: 0;
   left: 50%;
-  transform: translate(-50%, 0);
+  opacity: 0;
+  transform: translate(-50%, 50%);
   border-radius: 20px 20px 0 0 ;
   background-color: #fff;
   z-index: 19;
   padding: 30px;
   box-shadow: 0 -30px 60px 0 rgba(74, 114, 255, 0.25);
+  transition: opacity .2s ease-in-out, transform .2s ease-in-out;
 
   @include mobile {
     border-radius: 14px 14px 0 0;
@@ -30,10 +20,9 @@
     max-width: 90%;
   }
 
-  &--animated {
-    animation-name: appearFromBottom;
-    animation-duration: .2s;
-    animation-timing-function: ease-in-out;
+  &--appear {
+    opacity: 1;
+    transform: translate(-50%, 0);
   }
 
   &__actions {
