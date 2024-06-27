@@ -365,7 +365,7 @@ footer {
     }
 }
 
-.img-cover, .b-article img.b-article__photo-img, .b-article__avatar img, .article__avatar img, .article__img img, .pr-card__img, .gallery__img, .who__left-img img, .testimonial__img img, .website .twentytwenty-container img, .banner__img, .who-card__graph, .who-card__avatar img, .t-card__avatar img, .shop__right img, .modal__body img:last-child, .logo img {
+.img-cover, .b-article img.b-article__photo-img, .b-article__avatar img, .article__avatar img, .article__img img, .pr-card__img, .gallery__img, .who__left-img img, .testimonial__img img, .website .twentytwenty-container img, .banner__img, .modal-swiper__img, .who-card__graph, .who-card__avatar img, .t-card__avatar img, .shop__right img, .modal__body img:last-child, .logo img {
     width: 100%;
     height: 100%;
     -o-object-fit: cover;
@@ -2514,6 +2514,47 @@ footer {
 .cookies__icon:hover {
     -webkit-transform: rotate(0);
     transform: rotate(0);
+}
+
+.modal-swiper {
+    position: relative;
+    height: 600px;
+}
+
+@media screen and (max-width: 1200px) {
+    .modal-swiper {
+        height: 500px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .modal-swiper {
+        height: 400px;
+    }
+}
+
+.modal-swiper .swiper {
+    height: 100%;
+}
+
+.modal-swiper .swiper-button-next, .modal-swiper .swiper-button-prev {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.modal-swiper__img {
+    -o-object-position: top;
+    object-position: top;
+}
+
+.modal__body .banner__actions {
+    margin-bottom: 0;
+}
+
+.modal__right {
+    max-height: 700px;
 }
 
 .header {

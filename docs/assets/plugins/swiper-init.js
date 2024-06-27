@@ -73,3 +73,19 @@ var swiper1 = new Swiper(".test-swiper", {
         }
     }
 });
+
+var swiper2 = new Swiper(".projectsSwiper", {
+    slidesPerView: 1,
+    speed: 500,
+    coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+    },
+    spaceBetween: 4,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+});
