@@ -1,0 +1,36 @@
+.modal-swiper {
+  position: relative;
+  height: 600px;
+
+  @include laptop {
+    height: 500px;
+  }
+
+  @include mobile-large {
+    height: 400px;
+  }
+
+  .swiper {
+    height: 100%;
+  }
+
+  .swiper-button-next, .swiper-button-prev {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &__img {
+    @extend .img-cover;
+    object-position: top;
+  }
+
+}
+.modal__body {
+  .banner__actions {
+    margin-bottom: 0;
+  }
+}
+.modal__right {
+  max-height: none;
+}
