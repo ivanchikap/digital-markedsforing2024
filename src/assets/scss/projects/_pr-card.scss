@@ -2,7 +2,13 @@
   position: relative;
   overflow: hidden;
   cursor: pointer;
-  height: 300px;
+  height: 320px;
+  width: 100%;
+  max-width: 433px;
+
+  @include widescreen {
+    height: 296px;
+  }
 
   &:hover {
     .pr-card__img {

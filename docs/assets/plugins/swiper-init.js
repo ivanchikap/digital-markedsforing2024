@@ -9,7 +9,7 @@ var swiper = new Swiper(".mySwiper", {
         slideShadows: true,
     },
     autoplay: {
-        delay: 3000
+        delay: 4000
     },
     pagination: {
         el: ".swiper-pagination",
@@ -37,6 +37,9 @@ var swiper = new Swiper(".mySwiper", {
         1440: {
             slidesPerView: 3,
             spaceBetween: 30
+        },
+        1600: {
+            spaceBetween: 40
         }
     }
 });

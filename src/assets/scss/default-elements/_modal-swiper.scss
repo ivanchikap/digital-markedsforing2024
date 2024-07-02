@@ -1,14 +1,23 @@
 .modal-swiper {
   position: relative;
-  height: 600px;
+  height: 700px;
 
   @include laptop {
-    height: 500px;
+    height: 630px;
+  }
+
+  @include tablet {
+    height: 510px;
   }
 
   @include mobile-large {
-    height: 400px;
+    height: 390px;
   }
+
+  @include mobile {
+    height: 250px;
+  }
+
 
   .swiper {
     height: 100%;
@@ -29,6 +38,16 @@
 .modal__body {
   .banner__actions {
     margin-bottom: 0;
+
+    @include mobile {
+      flex-direction: column;
+    }
+
+    .btn {
+      @include mobile {
+        width: 90%;
+      }
+    }
   }
 }
 .modal__right {
