@@ -1281,6 +1281,7 @@ footer {
 
 .swiper.mySwiper {
     padding: 30px 30px 30px 30px;
+    max-width: 1440px;
 }
 
 @media screen and (max-width: 992px) {
@@ -2518,18 +2519,30 @@ footer {
 
 .modal-swiper {
     position: relative;
-    height: 600px;
+    height: 700px;
 }
 
 @media screen and (max-width: 1200px) {
     .modal-swiper {
-        height: 500px;
+        height: 630px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .modal-swiper {
+        height: 510px;
     }
 }
 
 @media screen and (max-width: 768px) {
     .modal-swiper {
-        height: 400px;
+        height: 390px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .modal-swiper {
+        height: 250px;
     }
 }
 
@@ -2551,6 +2564,19 @@ footer {
 
 .modal__body .banner__actions {
     margin-bottom: 0;
+}
+
+@media screen and (max-width: 576px) {
+    .modal__body .banner__actions {
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .modal__body .banner__actions .btn {
+        width: 90%;
+    }
 }
 
 .modal__right {
@@ -3413,7 +3439,15 @@ footer {
     position: relative;
     overflow: hidden;
     cursor: pointer;
-    height: 300px;
+    height: 320px;
+    width: 100%;
+    max-width: 433px;
+}
+
+@media screen and (max-width: 1440px) {
+    .pr-card {
+        height: 296px;
+    }
 }
 
 .pr-card:hover .pr-card__img {

@@ -1,3 +1,0 @@
-$(function(){
-    $("#website-slider").twentytwenty();
-});
