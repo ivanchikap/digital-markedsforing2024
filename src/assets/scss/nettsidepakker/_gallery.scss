@@ -4,6 +4,8 @@
 
 
   &__item {
+    display: flex;
+    justify-content: center;
     position: relative;
     overflow: hidden;
     padding: 2px;
@@ -20,15 +22,22 @@
       }
     }
 
-    @include tablet {
+
+    @include laptop {
       width: 50%;
+      &:not(:nth-child(-n + 2)) {
+        margin-top: 30px;
+      }
     }
 
-    @include mobile {
+    @include mobile-large {
       width: 100%;
       max-width: 460px;
       margin-left: auto;
       margin-right: auto;
+      &:not(:nth-child(-n + 1)) {
+        margin-top: 20px;
+      }
     }
   }
 
