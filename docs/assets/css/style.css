@@ -247,7 +247,7 @@ body.show-sidebar {
 }
 
 main {
-    padding-top: 86px;
+    padding-top: 84px;
 }
 
 .main__wrapper {
@@ -2622,7 +2622,7 @@ footer {
     background-image: url("../images/bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: top;
 }
 
 @media screen and (max-width: 576px) {
