@@ -225,6 +225,10 @@ body.show-sidebar {
   overflow: hidden;
 }
 
+main {
+  padding-top: 84px;
+}
+
 .main__wrapper {
   padding: 55px 0;
 }
@@ -1190,6 +1194,19 @@ footer {
   height: 16px;
   fill: #0C1B4D;
 }
+.modal__fullwidth {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal__fullwidth--left {
+  justify-content: flex-start;
+}
+.modal__fullwidth svg {
+  height: 20px;
+  margin-right: 8px;
+  fill: #4A72FF;
+}
 .modal__close {
   position: absolute;
   top: 1.3rem;
@@ -2058,6 +2075,11 @@ footer {
   max-height: 700px;
 }
 
+.fullwidth__img {
+  width: 100%;
+  height: auto;
+}
+
 .header {
   padding: 22px 0;
   position: absolute;
@@ -2068,7 +2090,7 @@ footer {
   background-image: url("../images/bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: top;
 }
 @media screen and (max-width: 576px) {
   .header {
@@ -2095,7 +2117,7 @@ footer {
 }
 
 .banner {
-  padding: 116px 0 60px 0;
+  padding: 30px 0 60px 0;
   background-image: url("../images/bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;

@@ -90,6 +90,23 @@
     fill: $dark-blue;
   }
 
+  &__fullwidth {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &--left {
+      justify-content: flex-start;
+    }
+
+
+    svg {
+      height: 20px;
+      margin-right: 8px;
+      fill: $blue;
+    }
+  }
+
   &__close {
     position: absolute;
     top: 1.3rem;
