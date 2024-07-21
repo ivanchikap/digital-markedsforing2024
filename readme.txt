@@ -18,3 +18,5 @@
 
      }
 
+6. slider twenty-twenty before-after img size: 1410x600 (0.42), 1300x550, 1100x460, 860x360, 440
+
